@@ -187,16 +187,17 @@ namespace FargoCalamity
             for (int i = 0; i < Recipe.numRecipes; i++)
             {
                 Recipe recipe = Main.recipe[i];
-
+                
+                if (recipe.createItem.type == ModLoader.GetMod("FargowiltasSouls").Find<ModItem>("EternitySoul").Type)
+                {
+                    recipe.DisableRecipe();
+                }
+                
                 if (recipe.createItem.type == ModLoader.GetMod("FargowiltasSouls").Find<ModItem>("UniverseSoul").Type)
                 {
                     recipe.DisableRecipe();
                 }
-                if (recipe.createItem.type == ModLoader.GetMod("FargowiltasSouls").Find<ModItem>("EternitySoul").Type)
-                {
-                    recipe.RemoveIngredient(ModContent.ItemType<UniverseSoul>());
-                    recipe.AddIngredient(ModContent.ItemType<universe>());
-                }
+
             }
         }
     }
