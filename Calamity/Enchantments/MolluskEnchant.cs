@@ -50,12 +50,17 @@ namespace FargoCalamity.Calamity.Enchantments
                 player.maxMinions += 4;
             }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.GiantPearl))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("GiantPearl").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.AquaticEmblem))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("AquaticEmblem").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.VictideEnchant))
+            {
                 ModLoader.GetMod("FargoCalamity").Find<ModItem>("VictideEnchant").UpdateAccessory(player, hideVisual);
-
+            }
         }
 
         public override void AddRecipes()

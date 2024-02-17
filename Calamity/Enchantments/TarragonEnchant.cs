@@ -48,10 +48,14 @@ namespace FargoCalamity.Calamity.Enchantments
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("TarragonHeadMagic").UpdateArmorSet(player);
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("TarragonHeadRogue").UpdateArmorSet(player);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.BlazingCore))       
+            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.BlazingCore))    
+            {   
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("BlazingCore").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.DarkSunRing))  
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("DarkSunRing").UpdateAccessory(player, hideVisual);
+            }
         }
 
         public override void AddRecipes()

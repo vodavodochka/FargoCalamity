@@ -41,13 +41,21 @@ namespace FargoCalamity.Calamity.Enchantments
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.UmbraphileArmour))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("UmbraphileHood").UpdateArmorSet(player);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.ThiefsDime))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("ThiefsDime").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.VampiricTalisman))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("VampiricTalisman").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.MomentumCapacitor))        
+            {
                ModLoader.GetMod("CalamityMod").Find<ModItem>("MomentumCapacitor").UpdateAccessory(player, hideVisual);
+            }
         }
 
         public override void AddRecipes()

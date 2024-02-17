@@ -51,9 +51,13 @@ namespace FargoCalamity.Calamity.Enchantments
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("HydrothermicHeadRogue").UpdateArmorSet(player);
             }
             if (SoulConfig.Instance.calamityToggles.HallowedRune)
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("HallowedRune").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.calamityToggles.EtherealExtorter)
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("EtherealExtorter").UpdateAccessory(player, hideVisual); 
+            }
         }
 
         public override void AddRecipes()

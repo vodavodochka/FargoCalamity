@@ -48,9 +48,13 @@ namespace FargoCalamity.Calamity.Enchantments
             CalamityPlayer modPlayer = player.GetModPlayer<CalamityPlayer>();
 
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.DemonshadeArmour))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("DemonshadeHelm").UpdateArmorSet(player);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.ProfanedSoulCrystal))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("ProfanedSoulCrystal").UpdateAccessory(player, hideVisual);
+            }
         }
 
         public override void AddRecipes()

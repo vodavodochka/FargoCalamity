@@ -61,9 +61,13 @@ namespace FargoCalamity.Calamity.Enchantments
             player.noFallDmg = true;
 
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.GladiatorsLocket))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("GladiatorsLocket").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.UnstablePrism))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("UnstablePrism").UpdateAccessory(player, hideVisual);
+            }
         }
 
         public override void AddRecipes()

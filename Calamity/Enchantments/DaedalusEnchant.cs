@@ -53,7 +53,9 @@ namespace FargoCalamity.Calamity.Enchantments
             }
             
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.PermafrostsConcoction))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("PermafrostsConcoction").UpdateAccessory(player, hideVisual);
+            }
             ModLoader.GetMod("FargoCalamity").Find<ModItem>("SnowRuffianEnchant").UpdateAccessory(player, hideVisual);            
         }
 

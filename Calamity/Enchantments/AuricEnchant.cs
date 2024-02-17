@@ -74,9 +74,13 @@ namespace FargoCalamity.Calamity.Enchantments
             }
 
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.HeartoftheElements))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("HeartoftheElements").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.TheSponge))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("TheSponge").UpdateAccessory(player, hideVisual);
+            }
         }
 
 

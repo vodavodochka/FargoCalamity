@@ -49,11 +49,16 @@ namespace FargoCalamity.Calamity.Enchantments
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("VictideHeadRogue").UpdateArmorSet(player);
             }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.OceanCrest))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("OceanCrest").UpdateAccessory(player, hideVisual);
-                
+            }
+
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.LuxorsGift))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("LuxorsGift").UpdateAccessory(player, hideVisual);
+            }
         }
+
 
         public override void AddRecipes()
         {

@@ -68,7 +68,9 @@ namespace FargoCalamity.Calamity.Enchantments
                 }
             }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.ScuttlersJewel))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("ScuttlersJewel").UpdateAccessory(player, hideVisual);
+            }
         }
 
         public override void AddRecipes()

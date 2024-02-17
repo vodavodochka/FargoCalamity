@@ -53,9 +53,13 @@ namespace FargoCalamity.Calamity.Enchantments
             }
 
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.ChaliceOfTheBloodGod))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("ChaliceOfTheBloodGod").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.EldritchSoulArtifact))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("EldritchSoulArtifact").UpdateAccessory(player, hideVisual);
+            }
             ModLoader.GetMod("FargoCalamity").Find<ModItem>("BrimflameEnchant").UpdateAccessory(player, hideVisual);
         }
 

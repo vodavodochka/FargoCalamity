@@ -48,13 +48,21 @@ namespace FargoCalamity.Calamity.Enchantments
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("SilvaHeadSummon").UpdateArmorSet(player);
             }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.TheAmalgam))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("TheAmalgam").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.GodlySoulArtifact))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("GodlySoulArtifact").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.YharimsGift))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("YharimsGift").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.DynamoStemCells))         
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("DynamoStemCells").UpdateAccessory(player, hideVisual);
+            }
         }
 
         public override void AddRecipes()

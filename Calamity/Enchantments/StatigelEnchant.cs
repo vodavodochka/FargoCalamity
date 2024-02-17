@@ -56,13 +56,17 @@ namespace FargoCalamity.Calamity.Enchantments
             }
 
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.FungalSymbiote))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("FungalSymbiote").UpdateAccessory(player, hideVisual);
-
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.ManaOverloader))             
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("ManaOverloader").UpdateAccessory(player, hideVisual);
-
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.CounterScarf))    
-             ModLoader.GetMod("CalamityMod").Find<ModItem>("CounterScarf").UpdateAccessory(player, hideVisual);
+            {
+                ModLoader.GetMod("CalamityMod").Find<ModItem>("CounterScarf").UpdateAccessory(player, hideVisual);
+            }
         }
 
         public override void AddRecipes()

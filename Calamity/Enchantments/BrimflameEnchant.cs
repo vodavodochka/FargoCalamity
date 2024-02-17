@@ -44,7 +44,9 @@ namespace FargoCalamity.Calamity.Enchantments
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.BrimflameArmour))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("BrimflameScowl").UpdateArmorSet(player);
+            }
         }
 
         public override void AddRecipes()

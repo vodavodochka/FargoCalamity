@@ -43,9 +43,13 @@ namespace FargoCalamity.Calamity.Enchantments
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
             if (player.statLife <= (int)(player.statLifeMax2 * 0.5))
+            {
                 player.statDefense += 5;
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.TrinketofChi))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("TrinketofChi").UpdateAccessory(player, hideVisual);
+            }
         }
 
         public override void AddRecipes()

@@ -45,15 +45,23 @@ namespace FargoCalamity.Calamity.Enchantments
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.FathomSwarmerArmour))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("FathomSwarmerVisage").UpdateArmorSet(player);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.CorrosiveSpine))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("CorrosiveSpine").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.LumenousAmulet))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("LumenousAmulet").UpdateAccessory(player, hideVisual);
+            }
             ModLoader.GetMod("FargoCalamity").Find<ModItem>("SulphurousEnchant").UpdateAccessory(player, hideVisual);
 
             if (Collision.DrownCollision(player.position, player.width, player.height, player.gravDir))
+            {
                 player.GetDamage(DamageClass.Summon) += 0.1f;
+            }
         }
 
         public override void AddRecipes()

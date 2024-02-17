@@ -51,9 +51,13 @@ namespace FargoCalamity.Calamity.Enchantments
             }
             
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.NebulousCore))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("NebulousCore").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.DraedonsHeart))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("DraedonsHeart").UpdateAccessory(player, hideVisual);
+            }
         }
 
         public override void AddRecipes()

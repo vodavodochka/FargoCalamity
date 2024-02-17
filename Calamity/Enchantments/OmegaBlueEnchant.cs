@@ -42,13 +42,21 @@ namespace FargoCalamity.Calamity.Enchantments
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.OmegaBlueArmour))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("OmegaBlueHelmet").UpdateArmorSet(player);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.AbyssalDivingSuit))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("AbyssalDivingSuit").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.ReaperToothNecklace))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("ReaperToothNecklace").UpdateAccessory(player, hideVisual);
+            }
             if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.MutatedTruffle))
+            {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("MutatedTruffle").UpdateAccessory(player, hideVisual);
+            }
         }
 
         public override void AddRecipes()
