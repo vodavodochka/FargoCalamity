@@ -1,4 +1,5 @@
-﻿using Terraria;
+﻿using System;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Localization;
@@ -35,24 +36,30 @@ namespace FargoCalamity.Calamity.Enchantments
             Item.rare = 7;
             Item.value = 300000;
         }
+        
+
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
+            //int[] buf = player.buffType;
+            //Main.NewText(Convert.ToString(ModLoader.GetMod("Fargowiltas").Find<ModNPC>("Squirrel").Type));
+            
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.UmbraphileArmour))
+            if (SoulConfig.Instance.calamityToggles.UmbraphileArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("UmbraphileHood").UpdateArmorSet(player);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.ThiefsDime))
+            if (SoulConfig.Instance.calamityToggles.ThiefsDime)
             {
-                ModLoader.GetMod("CalamityMod").Find<ModItem>("ThiefsDime").UpdateAccessory(player, hideVisual);
+                player.AddBuff(434 , 18000, true, false);
+               //ModLoader.GetMod("CalamityMod").Find<ModBuff>("ThiefsDime").Update(player, ref buffIndex);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.VampiricTalisman))
+            if (SoulConfig.Instance.calamityToggles.VampiricTalisman)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("VampiricTalisman").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.MomentumCapacitor))        
+            if (SoulConfig.Instance.calamityToggles.MomentumCapacitor)  
             {
                ModLoader.GetMod("CalamityMod").Find<ModItem>("MomentumCapacitor").UpdateAccessory(player, hideVisual);
             }

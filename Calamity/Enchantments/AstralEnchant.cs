@@ -44,15 +44,15 @@ namespace FargoCalamity.Calamity.Enchantments
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.AstralArmour))
+            if (SoulConfig.Instance.calamityToggles.AstralArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("AstralHelm").UpdateArmorSet(player);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.Purity))
+            if (SoulConfig.Instance.calamityToggles.Purity)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("Purity").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.GravistarSabaton))
+            if (SoulConfig.Instance.calamityToggles.GravistarSabaton)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("GravistarSabaton").UpdateAccessory(player, hideVisual);
             }

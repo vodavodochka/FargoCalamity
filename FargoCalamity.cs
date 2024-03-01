@@ -2,9 +2,11 @@ using CalamityMod.Items.Armor;
 using CalamityMod.Items.Placeables.Furniture;
 using System;
 using System.Collections.Generic;
+using Terraria.ID;
 using Terraria;
-using Terraria.Localization;
+using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.Localization;
 using CalamityMod.Items.Armor.Aerospec;
 using CalamityMod.Items.Armor.Hydrothermic;
 using CalamityMod.Items.Armor.Auric;
@@ -96,7 +98,6 @@ namespace FargoCalamity
                 AddToggle("CalamityGiantPearlConfig", "Giant Pearl", "MolluskEnchant", "ffffff");
 
                 AddToggle("CalamityTarragonEffectsConfig", "Tarragon Effects", "TarragonEnchant", "ffffff");
-
             }
             else
             {
@@ -108,7 +109,6 @@ namespace FargoCalamity
         public void AddToggle(String toggle, String name, String item, String color)
         {
             LocalizedText text = Language.GetOrRegister(toggle);
-            // text.SetDefault("[i:" + item + "] [c/" + color + ":" + name + "]");
         }
 
         public override void PostSetupContent()

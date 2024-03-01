@@ -41,19 +41,19 @@ namespace FargoCalamity.Calamity.Enchantments
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.OmegaBlueArmour))
+            if (SoulConfig.Instance.calamityToggles.OmegaBlueArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("OmegaBlueHelmet").UpdateArmorSet(player);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.AbyssalDivingSuit))
+            if (SoulConfig.Instance.calamityToggles.AbyssalDivingSuit)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("AbyssalDivingSuit").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.ReaperToothNecklace))
+            if (SoulConfig.Instance.calamityToggles.ReaperToothNecklace)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("ReaperToothNecklace").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.MutatedTruffle))
+            if (SoulConfig.Instance.calamityToggles.MutatedTruffle)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("MutatedTruffle").UpdateAccessory(player, hideVisual);
             }

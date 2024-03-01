@@ -39,15 +39,15 @@ namespace FargoCalamity.Calamity.Enchantments
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.FearmongerArmour))
+            if (SoulConfig.Instance.calamityToggles.FearmongerArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("FearmongerGreathelm").UpdateArmorSet(player);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.SpectralVeil))
+            if (SoulConfig.Instance.calamityToggles.SpectralVeil)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("SpectralVeil").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.StatisBeltOfCurses))
+            if (SoulConfig.Instance.calamityToggles.StatisBeltOfCurses)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("StatisBeltOfCurses").UpdateAccessory(player, hideVisual);
             }

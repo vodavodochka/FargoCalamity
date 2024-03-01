@@ -48,7 +48,7 @@ namespace FargoCalamity.Calamity.Enchantments
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
             //set bonus
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.SnowRuffianWings))
+            if (SoulConfig.Instance.calamityToggles.SnowRuffianArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("SnowRuffianMask").UpdateArmorSet(player);
                 if (player.controlJump)
@@ -67,7 +67,7 @@ namespace FargoCalamity.Calamity.Enchantments
                     this.shouldBoost = true;
                 }
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.ScuttlersJewel))
+            if (SoulConfig.Instance.calamityToggles.ScuttlersJewel)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("ScuttlersJewel").UpdateAccessory(player, hideVisual);
             }

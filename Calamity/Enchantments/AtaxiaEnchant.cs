@@ -42,7 +42,7 @@ namespace FargoCalamity.Calamity.Enchantments
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.HydrothermicArmour))
+            if (SoulConfig.Instance.calamityToggles.HydrothermicArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("HydrothermicHeadMelee").UpdateArmorSet(player);
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("HydrothermicHeadMagic").UpdateArmorSet(player);

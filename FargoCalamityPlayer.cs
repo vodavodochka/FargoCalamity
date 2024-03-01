@@ -31,7 +31,7 @@ namespace FargoCalamity
 
         public void AddMinion(bool toggle, int proj, int damage, float knockback)
         {
-            if (Player.ownedProjectileCounts[proj] < 1 && Player.whoAmI == Main.myPlayer && SoulConfig.Instance.GetValue(toggle))
+            if (Player.ownedProjectileCounts[proj] < 1 && Player.whoAmI == Main.myPlayer)
                 Projectile.NewProjectile(Player.GetSource_FromThis(), new Vector2(Player.Center.X), new Vector2(Player.Center.Y), 0, -1, proj, damage, knockback, Main.myPlayer);
         }
     }

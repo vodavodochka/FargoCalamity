@@ -44,15 +44,15 @@ namespace FargoCalamity.Calamity.Enchantments
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.FathomSwarmerArmour))
+            if (SoulConfig.Instance.calamityToggles.FathomSwarmerArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("FathomSwarmerVisage").UpdateArmorSet(player);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.CorrosiveSpine))
+            if (SoulConfig.Instance.calamityToggles.CorrosiveSpine)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("CorrosiveSpine").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.LumenousAmulet))
+            if (SoulConfig.Instance.calamityToggles.LumenousAmulet)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("LumenousAmulet").UpdateAccessory(player, hideVisual);
             }

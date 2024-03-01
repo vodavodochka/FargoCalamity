@@ -66,12 +66,6 @@ namespace FargoCalamity
         {
             Instance = this;
         }
-
-        public bool GetValue(bool toggle, bool checkForMutantPresence = true)
-        {
-            Player player = Main.player[Main.myPlayer];
-            return checkForMutantPresence && player.GetModPlayer<FargoSoulsPlayer>().MutantPresence ? false : toggle;
-        }
     }
 
     public class CalamityToggles
@@ -144,10 +138,6 @@ namespace FargoCalamity
         [DefaultValue(true)]
         public bool SulphurousArmour;
 
-        [Label("Sandstorm In A Bottle Sulphurous")]
-        [DefaultValue(true)]
-        public bool SandstormInABottleSulphurous;
-
         [Label("Sand Cloak")]
         [DefaultValue(true)]
         public bool SandCloak;
@@ -161,10 +151,6 @@ namespace FargoCalamity
         [Label("Statigel Armour")]
         [DefaultValue(true)]
         public bool StatigelArmour;
-
-        [Label("Sandstorm In A Bottle Statigel")]
-        [DefaultValue(true)]
-        public bool SandstormInABottleStatigel;
 
         [Label("Fungal Symbiote")]
         [DefaultValue(true)]
@@ -180,9 +166,9 @@ namespace FargoCalamity
 
         //SnowRuffianEnchantment
         [Header("SnowRuffianEnchantment")]
-        [Label("Snow Ruffian Wings")]
+        [Label("Snow Ruffian Armour")]
         [DefaultValue(true)]
-        public bool SnowRuffianWings;
+        public bool SnowRuffianArmour;
 
         [Label("Scuttlers Jewel")]
         [DefaultValue(true)]
@@ -266,10 +252,6 @@ namespace FargoCalamity
         [DefaultValue(true)]
         public bool AquaticEmblem;
 
-        [Label("Victide Enchant")]
-        [DefaultValue(true)]
-        public bool VictideEnchant;
-
         //GodSlayerEnchantment
         [Header("GodSlayerEnchantment")]
         [Label("God Slayer Armour")]
@@ -294,7 +276,7 @@ namespace FargoCalamity
         [DefaultValue(true)]
         public bool SpectralVeil;
 
-        [Label("Statis Belt Of Curses")]
+        [Label("Statis' Void Sash")]
         [DefaultValue(true)]
         public bool StatisBeltOfCurses;
 

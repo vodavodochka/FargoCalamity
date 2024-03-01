@@ -28,15 +28,7 @@ namespace FargoCalamity.Calamity.Enchantments
 
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Reaver Enchantment");
-            /* Tooltip.SetDefault(
-@"'A thorny death awaits your enemies...'
-Melee projectiles explode on hit
-While using a ranged weapon you have a 10% chance to fire a powerful rocket
-Your magic projectiles emit a burst of spore gas on enemy hits
-Summons a reaver orb that emits spore gas when enemies are near
-You emit a cloud of spores when you are hit
-Rage activates when you are damaged"); */
+
         }
 
         public override void SetDefaults()
@@ -53,7 +45,7 @@ Rage activates when you are damaged"); */
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.ReaverArmour))
+            if (SoulConfig.Instance.calamityToggles.ReaverArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("ReaverHeadTank").UpdateArmorSet(player);
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("ReaverHeadExplore").UpdateArmorSet(player);

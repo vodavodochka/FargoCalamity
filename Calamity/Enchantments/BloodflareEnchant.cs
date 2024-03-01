@@ -43,7 +43,7 @@ namespace FargoCalamity.Calamity.Enchantments
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.BloodflareArmour))
+            if (SoulConfig.Instance.calamityToggles.BloodflareArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("BloodflareHeadMelee").UpdateArmorSet(player);
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("BloodflareHeadMagic").UpdateArmorSet(player);
@@ -52,11 +52,11 @@ namespace FargoCalamity.Calamity.Enchantments
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("BloodflareHeadSummon").UpdateArmorSet(player);
             }
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.ChaliceOfTheBloodGod))
+            if (SoulConfig.Instance.calamityToggles.ChaliceOfTheBloodGod)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("ChaliceOfTheBloodGod").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.EldritchSoulArtifact))
+            if (SoulConfig.Instance.calamityToggles.EldritchSoulArtifact)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("EldritchSoulArtifact").UpdateAccessory(player, hideVisual);
             }

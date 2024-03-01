@@ -43,20 +43,19 @@ namespace FargoCalamity.Calamity.Enchantments
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.PlagueReaperArmour))
+            if (SoulConfig.Instance.calamityToggles.PlagueReaperArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("PlagueReaperMask").UpdateArmorSet(player);
             }
-
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.PlagueHive))
+            if (SoulConfig.Instance.calamityToggles.PlagueHive)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("PlagueHive").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.PlaguedFuelPack))
+            if (SoulConfig.Instance.calamityToggles.PlaguedFuelPack)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("PlaguedFuelPack").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.TheCamper))
+            if (SoulConfig.Instance.calamityToggles.TheCamper)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("TheCamper").UpdateAccessory(player, hideVisual);
             }

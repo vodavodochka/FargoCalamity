@@ -41,7 +41,7 @@ namespace FargoCalamity.Calamity.Enchantments
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
             FargoCalamityPlayer modPlayer = player.GetModPlayer<FargoCalamityPlayer>();
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.StatigelArmour))
+            if (SoulConfig.Instance.calamityToggles.StatigelArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("StatigelHeadMelee").UpdateArmorSet(player);
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("StatigelHeadMagic").UpdateArmorSet(player);
@@ -49,21 +49,16 @@ namespace FargoCalamity.Calamity.Enchantments
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("StatigelHeadRogue").UpdateArmorSet(player);
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("StatigelHeadRanged").UpdateArmorSet(player);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.SandstormInABottleStatigel))
-            {
-                player.GetJumpState(ExtraJump.SandstormInABottle).Enable();
-                player.jumpBoost = true;
-            }
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.FungalSymbiote))
+            if (SoulConfig.Instance.calamityToggles.FungalSymbiote)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("FungalSymbiote").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.ManaOverloader))             
+            if (SoulConfig.Instance.calamityToggles.ManaOverloader)            
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("ManaOverloader").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.CounterScarf))    
+            if (SoulConfig.Instance.calamityToggles.CounterScarf)   
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("CounterScarf").UpdateAccessory(player, hideVisual);
             }

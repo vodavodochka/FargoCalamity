@@ -41,12 +41,12 @@ namespace FargoCalamity.Calamity.Enchantments
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
-
+            ModLoader.GetMod("CalamityMod").Find<ModItem>("WulfrumHat").UpdateArmorSet(player);
             if (player.statLife <= (int)(player.statLifeMax2 * 0.5))
             {
                 player.statDefense += 5;
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.TrinketofChi))
+            if (SoulConfig.Instance.calamityToggles.TrinketofChi)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("TrinketofChi").UpdateAccessory(player, hideVisual);
             }

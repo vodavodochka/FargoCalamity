@@ -42,20 +42,15 @@ namespace FargoCalamity.Calamity.Enchantments
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.SulphurousArmour))
+            if (SoulConfig.Instance.calamityToggles.SulphurousArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("SulphurousHelmet").UpdateArmorSet(player);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.SandstormInABottleSulphurous))
-            {
-                CalamityPlayer calamityPlayer = player.Calamity();
-                player.GetJumpState(ExtraJump.SandstormInABottle).Enable();
-            }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.SandCloak))
+            if (SoulConfig.Instance.calamityToggles.SandCloak)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("SandCloak").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.AlluringBait))
+            if (SoulConfig.Instance.calamityToggles.AlluringBait)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("AlluringBait").UpdateAccessory(player, hideVisual);
             }

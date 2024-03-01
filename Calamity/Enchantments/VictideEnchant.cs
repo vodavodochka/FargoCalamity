@@ -40,7 +40,7 @@ namespace FargoCalamity.Calamity.Enchantments
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.VictideArmour))
+            if (SoulConfig.Instance.calamityToggles.VictideArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("VictideHeadMelee").UpdateArmorSet(player);
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("VictideHeadRanged").UpdateArmorSet(player);
@@ -48,12 +48,12 @@ namespace FargoCalamity.Calamity.Enchantments
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("VictideHeadSummon").UpdateArmorSet(player);
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("VictideHeadRogue").UpdateArmorSet(player);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.OceanCrest))
+            if (SoulConfig.Instance.calamityToggles.OceanCrest)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("OceanCrest").UpdateAccessory(player, hideVisual);
             }
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.LuxorsGift))
+            if (SoulConfig.Instance.calamityToggles.LuxorsGift)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("LuxorsGift").UpdateAccessory(player, hideVisual);
             }

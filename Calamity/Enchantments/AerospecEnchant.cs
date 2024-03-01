@@ -50,7 +50,7 @@ namespace FargoCalamity.Calamity.Enchantments
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.AerospecArmour))
+            if (SoulConfig.Instance.calamityToggles.AerospecArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("AerospecHelm").UpdateArmorSet(player);
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("AerospecHat").UpdateArmorSet(player);
@@ -60,11 +60,11 @@ namespace FargoCalamity.Calamity.Enchantments
             }
             player.noFallDmg = true;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.GladiatorsLocket))
+            if (SoulConfig.Instance.calamityToggles.GladiatorsLocket)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("GladiatorsLocket").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.UnstablePrism))
+            if (SoulConfig.Instance.calamityToggles.UnstablePrism)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("UnstablePrism").UpdateAccessory(player, hideVisual);
             }

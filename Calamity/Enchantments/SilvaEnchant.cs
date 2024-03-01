@@ -42,24 +42,24 @@ namespace FargoCalamity.Calamity.Enchantments
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.SilvaArmour))
+            if (SoulConfig.Instance.calamityToggles.SilvaArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("SilvaHeadMagic").UpdateArmorSet(player);
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("SilvaHeadSummon").UpdateArmorSet(player);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.TheAmalgam))
+            if (SoulConfig.Instance.calamityToggles.TheAmalgam)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("TheAmalgam").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.GodlySoulArtifact))
+            if (SoulConfig.Instance.calamityToggles.GodlySoulArtifact)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("GodlySoulArtifact").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.YharimsGift))
+            if (SoulConfig.Instance.calamityToggles.YharimsGift)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("YharimsGift").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.DynamoStemCells))         
+            if (SoulConfig.Instance.calamityToggles.DynamoStemCells)       
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("DynamoStemCells").UpdateAccessory(player, hideVisual);
             }

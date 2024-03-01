@@ -43,18 +43,18 @@ namespace FargoCalamity.Calamity.Enchantments
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.GodSlayerArmour))
+            if (SoulConfig.Instance.calamityToggles.GodSlayerArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("GodSlayerHeadMelee").UpdateArmorSet(player);
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("GodSlayerHeadRogue").UpdateArmorSet(player);
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("GodSlayerHeadRanged").UpdateArmorSet(player);
             }
             
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.NebulousCore))
+            if (SoulConfig.Instance.calamityToggles.NebulousCore)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("NebulousCore").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.DraedonsHeart))
+            if (SoulConfig.Instance.calamityToggles.DraedonsHeart)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("DraedonsHeart").UpdateAccessory(player, hideVisual);
             }

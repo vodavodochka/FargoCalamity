@@ -43,7 +43,7 @@ namespace FargoCalamity.Calamity.Enchantments
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.DaedalusArmour))
+            if (SoulConfig.Instance.calamityToggles.DaedalusArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("DaedalusHeadMelee").UpdateArmorSet(player);
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("DaedalusHeadMagic").UpdateArmorSet(player);
@@ -52,7 +52,7 @@ namespace FargoCalamity.Calamity.Enchantments
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("DaedalusHeadRogue").UpdateArmorSet(player);
             }
             
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.PermafrostsConcoction))
+            if (SoulConfig.Instance.calamityToggles.PermafrostsConcoction)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("PermafrostsConcoction").UpdateAccessory(player, hideVisual);
             }

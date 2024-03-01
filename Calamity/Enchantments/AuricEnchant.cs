@@ -44,7 +44,7 @@ namespace FargoCalamity.Calamity.Enchantments
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.AuricArmour))
+            if (SoulConfig.Instance.calamityToggles.AuricArmour)
             {
                 //Auric
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("AuricTeslaRoyalHelm").UpdateArmorSet(player);
@@ -73,11 +73,11 @@ namespace FargoCalamity.Calamity.Enchantments
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("SilvaHeadSummon").UpdateArmorSet(player);
             }
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.HeartoftheElements))
+            if (SoulConfig.Instance.calamityToggles.HeartoftheElements)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("HeartoftheElements").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.TheSponge))
+            if (SoulConfig.Instance.calamityToggles.TheSponge)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("TheSponge").UpdateAccessory(player, hideVisual);
             }

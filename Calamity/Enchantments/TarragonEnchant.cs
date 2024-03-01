@@ -40,7 +40,7 @@ namespace FargoCalamity.Calamity.Enchantments
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.TarragonArmour))
+            if (SoulConfig.Instance.calamityToggles.TarragonArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("TarragonHeadMelee").UpdateArmorSet(player);
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("TarragonHeadRanged").UpdateArmorSet(player);
@@ -48,11 +48,11 @@ namespace FargoCalamity.Calamity.Enchantments
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("TarragonHeadMagic").UpdateArmorSet(player);
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("TarragonHeadRogue").UpdateArmorSet(player);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.BlazingCore))    
+            if (SoulConfig.Instance.calamityToggles.BlazingCore)    
             {   
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("BlazingCore").UpdateAccessory(player, hideVisual);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.DarkSunRing))  
+            if (SoulConfig.Instance.calamityToggles.DarkSunRing)  
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("DarkSunRing").UpdateAccessory(player, hideVisual);
             }

@@ -43,11 +43,11 @@ namespace FargoCalamity.Calamity.Enchantments
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
 
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.EmpyreanArmour))
+            if (SoulConfig.Instance.calamityToggles.EmpyreanArmour)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("EmpyreanMask").UpdateArmorSet(player);
             }
-            if (SoulConfig.Instance.GetValue(SoulConfig.Instance.calamityToggles.TheCommunity))
+            if (SoulConfig.Instance.calamityToggles.TheCommunity)
             {
                 ModLoader.GetMod("CalamityMod").Find<ModItem>("TheCommunity").UpdateAccessory(player, hideVisual);
             }
