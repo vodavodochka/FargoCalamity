@@ -97,18 +97,32 @@ namespace FargoCalamity.NPCs
         public override string GetChat()
         {
             WeightedRandom<string> chat = new WeightedRandom<string>();
-
-            chat.Add(Language.GetTextValue("Chitter chatter, I'm the chattiest squirrel in the forest!"));
-            chat.Add(Language.GetTextValue("I've got acorns galore, but I could always use more!"));
-            chat.Add(Language.GetTextValue("Watch out for that fox, he's a sly one!"));
-            chat.Add(Language.GetTextValue("Scampering up trees is my favorite pastime."));
-            chat.Add(Language.GetTextValue("Why can't those birds stop stealing my acorns?"));
-            chat.Add(Language.GetTextValue("I'm a master at finding hidden treasures in the forest."));
-            chat.Add(Language.GetTextValue("I may be small, but I'm fiercely independent."));
-            chat.Add(Language.GetTextValue("My bushy tail keeps me warm and cozy in the winter."));
-            chat.Add(Language.GetTextValue("I love nothing more than a good game of chase with my fellow squirrels."));
-            chat.Add(Language.GetTextValue("I may be quick, but I always take time to enjoy the beauty of the forest."));
-            
+            if (Language.ActiveCulture.Name == "en-US")
+            {
+                chat.Add(Language.GetTextValue("Chitter chatter, I'm the chattiest squirrel in the forest!"));
+                chat.Add(Language.GetTextValue("I've got acorns galore, but I could always use more!"));
+                chat.Add(Language.GetTextValue("Watch out for that fox, he's a sly one!"));
+                chat.Add(Language.GetTextValue("Scampering up trees is my favorite pastime."));
+                chat.Add(Language.GetTextValue("Why can't those birds stop stealing my acorns?"));
+                chat.Add(Language.GetTextValue("I'm a master at finding hidden treasures in the forest."));
+                chat.Add(Language.GetTextValue("I may be small, but I'm fiercely independent."));
+                chat.Add(Language.GetTextValue("My bushy tail keeps me warm and cozy in the winter."));
+                chat.Add(Language.GetTextValue("I love nothing more than a good game of chase with my fellow squirrels."));
+                chat.Add(Language.GetTextValue("I may be quick, but I always take time to enjoy the beauty of the forest."));
+            }
+            if (Language.ActiveCulture.Name == "ru-RU")
+            {
+                chat.Add(Language.GetTextValue("Бла, Бла, я самая болтливая белка в лесу!"));
+                chat.Add(Language.GetTextValue("У меня есть жёлуди в изобилии, но я всегда найду место для еще одного!"));
+                chat.Add(Language.GetTextValue("Будьте осторожны с этой лисой, она хитрая!"));
+                chat.Add(Language.GetTextValue("Бегать по деревьям - мое любимое занятие"));
+                chat.Add(Language.GetTextValue("Почему эти птицы не могут перестать воровать мои жёлуди?"));
+                chat.Add(Language.GetTextValue("Я мастер в поиске сокрытых сокровищ в лесу."));
+                chat.Add(Language.GetTextValue("Я может и маленькая, но я самостоятельна."));
+                chat.Add(Language.GetTextValue("Мой пушистый хвост сохраняет меня в тепле и уюте, даже зимой."));
+                chat.Add(Language.GetTextValue("Нет ничего лучше, чем хорошая игра в салки с моими беличьими друзьями"));
+                chat.Add(Language.GetTextValue("Я могу быть быстрой, но всегда нахожу время, чтобы насладиться красотой леса."));
+            }
             string chosenChat = chat;
             return chosenChat;
         }
