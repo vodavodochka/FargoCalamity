@@ -11,9 +11,6 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using FargoCalamity;
 using FargoCalamity.Calamity.Enchantments;
-using FargoCalamity.NPCs;
-using System.Linq;
-using Terraria.Utilities;
 
 namespace FargoCalamity.NPCs
 {
