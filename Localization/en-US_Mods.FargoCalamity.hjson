@@ -880,3 +880,24 @@ Configs: {
 		}
 	}
 }
+
+NPCs: {
+	DarkSquirrel: {
+		TownNPCMood: {
+			LoveBiome: I love the Forest, it's full of acorns and trees.
+			HateBiome: I dislike the Underground, it's too dark and crowded.
+			LoveSpace: I enjoy having my own tree, it's my personal space.
+			FarFromHome: I am never far from home, my tree is always nearby.
+			Content: I am content when I have enough acorns for the winter.
+			LoveNPC: I love the Merchant, he always has the best acorns for sale.
+			HateNPC: I dislike the other squirrels, they always steal my acorns.`
+			Princess_LovesNPC: I like {NPCName}.
+			LikeNPC_Princess: I like {NPCName}.
+			HateCrowded: I hate how crowded I am when other squirrels invade my space.
+			DislikeCrowded: I dislike how crowded I am when other animals are around.
+			NoHome: I hate not having a home when my tree is destroyed.
+		}
+
+		DisplayName: Dark Squirrel
+	}
+}

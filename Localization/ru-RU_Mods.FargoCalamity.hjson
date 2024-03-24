@@ -864,8 +864,29 @@ Configs: {
 		// Tooltip: ""
 
 		WulfrumArmour: {
-			// Tooltip: ""
-			// Label: Wulfrum Armour
+			Tooltip: ""
+			Label: Wulfrum Armour
 		}
+	}
+}
+
+NPCs: {
+	DarkSquirrel: {
+		TownNPCMood: {
+			LoveBiome: Я люблю Лес, он наполнен орехами и деревьями.
+			HateBiome: Не люблю Подземелье, оно слишком темное и тесное.
+			LoveSpace: Мне нравится иметь свое собственное дерево, это мое личное пространство.
+			FarFromHome: Я всегда дома, мое дерево всегда рядом.
+			Content: Я доволен, когда у меня достаточно орехов на зиму.
+			LoveNPC: Я люблю Торговца, у него всегда самые лучшие орехи на продажу
+			HateNPC: Не люблю других белок, они всегда воруют мои орехи.
+			Princess_LovesNPC: Мне нравится {NPCName}.
+			LikeNPC_Princess: Мне нравится {NPCName}.
+			HateCrowded: Я ненавижу, когда другие белки вторгаются в мое пространство.
+			DislikeCrowded: Мне не нравится, когда вокруг другие животные.
+			NoHome: У меня нет дома, мое дерево разрушено.
+		}
+
+		DisplayName: Тёмная Белка
 	}
 }
