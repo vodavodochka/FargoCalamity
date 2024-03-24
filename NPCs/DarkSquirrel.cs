@@ -9,7 +9,11 @@ using Terraria.GameContent.Personalities;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using FargoCalamity;
 using FargoCalamity.Calamity.Enchantments;
+using FargoCalamity.NPCs;
+using System.Linq;
+using Terraria.Utilities;
 
 namespace FargoCalamity.NPCs
 {
@@ -17,7 +21,7 @@ namespace FargoCalamity.NPCs
     public class DarkSquirrel : ModNPC
     {
         private static Profiles.DefaultNPCProfile NPCProfile;
-        private string ShopName = "Shop";
+        private string ShopName = "DarkSquirrelShop";
         private int count;
         public override void SetStaticDefaults()
         {
@@ -39,9 +43,17 @@ namespace FargoCalamity.NPCs
             };
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
 
+            NPC.Happiness.SetNPCAffection(NPCID.Guide, AffectionLevel.Love);
+            NPC.Happiness.SetNPCAffection(NPCID.Merchant, AffectionLevel.Love);
+            NPC.Happiness.SetNPCAffection(ModLoader.GetMod("Fargowiltas").Find<ModNPC>("Squirrel").Type, AffectionLevel.Hate);
+
             NPC.Happiness.SetBiomeAffection<ForestBiome>(AffectionLevel.Love);
             NPC.Happiness.SetBiomeAffection<UndergroundBiome>(AffectionLevel.Hate);
-            //NPC.Happiness.SetNPCAffection<>(AffectionLevel.Like);
+
+            NPCHappiness.AffectionLevelToPriceMultiplier[AffectionLevel.Love] = 0.75f;
+            NPCHappiness.AffectionLevelToPriceMultiplier[AffectionLevel.Like] = 0.85f;
+            NPCHappiness.AffectionLevelToPriceMultiplier[AffectionLevel.Dislike] = 1.1f;
+            NPCHappiness.AffectionLevelToPriceMultiplier[AffectionLevel.Hate] = 1.25f;
 
             NPCProfile = new Profiles.DefaultNPCProfile(Texture, NPCHeadLoader.GetHeadSlot(HeadTexture), Texture + "_Party");
         }
@@ -53,8 +65,8 @@ namespace FargoCalamity.NPCs
             NPC.width = 44;
             NPC.height = 42;
             NPC.damage = 0;
-            NPC.defense = 0;
-            NPC.lifeMax = 100;
+            NPC.defense = 40;
+            NPC.lifeMax = 2500;
             NPC.HitSound = SoundID.NPCHit1;
             NPC.DeathSound = SoundID.NPCDeath1;
             NPC.knockBackResist = .25f;
@@ -80,80 +92,40 @@ namespace FargoCalamity.NPCs
         public override void SetChatButtons(ref string button, ref string button2)
         {
             button = "Shop";
-            button2 = "test";
         }
 
+        public override string GetChat()
+        {
+            WeightedRandom<string> chat = new WeightedRandom<string>();
+
+            chat.Add(Language.GetTextValue("Chitter chatter, I'm the chattiest squirrel in the forest!"));
+            chat.Add(Language.GetTextValue("I've got acorns galore, but I could always use more!"));
+            chat.Add(Language.GetTextValue("Watch out for that fox, he's a sly one!"));
+            chat.Add(Language.GetTextValue("Scampering up trees is my favorite pastime."));
+            chat.Add(Language.GetTextValue("Why can't those birds stop stealing my acorns?"));
+            chat.Add(Language.GetTextValue("I'm a master at finding hidden treasures in the forest."));
+            chat.Add(Language.GetTextValue("I may be small, but I'm fiercely independent."));
+            chat.Add(Language.GetTextValue("My bushy tail keeps me warm and cozy in the winter."));
+            chat.Add(Language.GetTextValue("I love nothing more than a good game of chase with my fellow squirrels."));
+            chat.Add(Language.GetTextValue("I may be quick, but I always take time to enjoy the beauty of the forest."));
+            
+            string chosenChat = chat;
+            return chosenChat;
+        }
         public override void OnChatButtonClicked(bool firstButton, ref string shop)
         {
             if (firstButton)
             {
-                shop = "Shop0";
+                shop = ShopName;
             }
         }
-
-        public void ToggleShops()
-        {
-            ShopName = "Shop0";
-        }
-
-        private static int[] ShopIn = new int[]
-        {
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("AeropecEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("AstralEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("AtaxiaEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("AuricEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("BloodflareEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("BrimflameEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("DaedalusEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("DemonShadeEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("FathomSwarmerEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("FearmongerEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("GodSlayerEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("MolluskEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("OmegaBlueEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("PlagueReaperEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("ReaverEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("SilvaEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("SnowRuffianEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("StatigelEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("SulphurousEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("TarragonEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("UmbraphileEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("VictideEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("WulfrumEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("XerocEnchant").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("RogueEssence").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("AnnihilationForce").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("DesolationForce").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("DevastationForce").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("ExaltationForce").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("CalamitySoul").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("RogueSoul").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("SoulOfEternity").Type,
-            ModLoader.GetMod("FargoCalamity").Find<ModItem>("universe").Type,
-        };
 
         public override void AddShops()
         {
-            int c = 0;
             NPCShop npcShop = new NPCShop(Type, ShopName);
-            Player player = new Player();
-            foreach (int ShopOut in ShopIn)
-            {
-                if (player.HasItem(ShopOut) && count < 40)
-                {
-                    npcShop = new NPCShop(Type, ShopName);
-                    npcShop.Add(ShopOut);
-                    count++;
-                }
-                else if (player.HasItem(ShopOut))
-                {
-                    c++;
-                    ShopName = "Shop" + Convert.ToString(c);
-                    count = 0;
-                }
-            }
-            
+            Mod fargoCalamity = ModLoader.GetMod("FargoCalamity");
+
+            npcShop.Register();
         }
     }
 }
