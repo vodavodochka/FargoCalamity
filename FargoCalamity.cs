@@ -2,7 +2,6 @@ using CalamityMod.Items.Armor;
 using CalamityMod.Items.Placeables.Furniture;
 using System;
 using System.Collections.Generic;
-using Terraria.ID;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -29,7 +28,7 @@ namespace FargoCalamity
     public class FargoCalamity : Mod
     {
         internal static FargoCalamity Instance;
-        internal bool CalamityLoaded;
+        internal bool CalamityLoaded; 
 
         public override void Load()
         {
