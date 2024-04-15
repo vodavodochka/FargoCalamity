@@ -120,6 +120,19 @@ namespace FargoCalamity.NPCs
                 chat.Add(Language.GetTextValue("Нет ничего лучше, чем хорошая игра в салки с моими беличьими друзьями"));
                 chat.Add(Language.GetTextValue("Я могу быть быстрой, но всегда нахожу время, чтобы насладиться красотой леса."));
             }
+            if (Language.ActiveCulture.Name == "zh-Hans")
+            {
+                chat.Add(Language.GetTextValue("啾啾，吱吱，我是森林里最能说话的松鼠！"));
+                chat.Add(Language.GetTextValue("我拥有很多橡实，但我总是需要更多！"));
+                chat.Add(Language.GetTextValue("小心那只狐狸，那是一只狡猾的狐狸！"));
+                chat.Add(Language.GetTextValue("是的，爬树是我最喜欢的消遣方式。"));
+                chat.Add(Language.GetTextValue("为什么那些愚蠢的鸟不能停止偷走我的橡实！"));
+                chat.Add(Language.GetTextValue("我是森林中寻找秘密宝藏的大师！"));
+                chat.Add(Language.GetTextValue("我可能看起来很小一只，但我是一只非常独立自主的松鼠！"));
+                chat.Add(Language.GetTextValue("我这浓密的尾巴，可以保证让我在冬天过得温暖又舒适。"));
+                chat.Add(Language.GetTextValue("我最喜欢的莫过于和我的松鼠同伴们来一场追逐游戏。"));
+                chat.Add(Language.GetTextValue("我可能跑得很快，但我总是会停下花一段时间，来欣赏美丽的森林景色。"));
+            }
             string chosenChat = chat;
             return chosenChat;
         }
