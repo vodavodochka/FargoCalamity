@@ -1,0 +1,916 @@
+Items: {
+	AerospecEnchant: {
+		DisplayName: 天蓝魔石
+		Tooltip:
+			'''
+			提高下落速度，免疫掉落伤害
+			一次性受到超过25点伤害时
+			会召唤追踪羽毛从天而降
+			拥有角斗士金锁的效果
+			拥有不稳定花岗岩核心的效果
+			“上天也眷顾你”
+			'''
+	}
+
+	AstralEnchant: {
+		DisplayName: 星幻魔石
+		Tooltip:
+			'''
+			对敌人造成暴击时会降下落星
+			此效果有1秒的冷却时间
+			拥有无瑕粹魂晶和引力靴的效果
+			“幻星感染已经吞噬了你……”
+			'''
+	}
+
+	AtaxiaEnchant: {
+		DisplayName: 渊泉魔石
+		Tooltip:
+			'''
+			你受伤时会在原地产生一场烈焰爆炸
+			近战攻击和射弹击中敌人时喷发出混沌火焰
+			远程攻击每0.33秒发射一团追踪混沌火焰
+			魔法攻击命中时召唤伤害火球和治疗火球
+			你会召唤沸腾渊泉来保护你
+			每2秒在你的周围召唤追踪混沌火焰
+			拥有神圣符文和虚空掠夺者的效果
+			'''
+	}
+
+	AuricEnchant: {
+		DisplayName: 古圣金源魔石
+		Tooltip:
+			'''
+			获得龙蒿盔甲、血炎盔甲、弑神者盔甲
+			以及始源林海盔甲的套装效果
+			所有射弹击中敌人时
+			会生成能治疗的圣金源光球
+			拥有元灵之心和化绵留香石的效果
+			“你的力量已堪比丛林暴君……”
+			'''
+	}
+
+	BloodflareEnchant: {
+		DisplayName: 血炎魔石
+		Tooltip:
+			'''
+			击中生命值低于50%的敌人会掉落红心
+			以上效果有5秒的冷却时间
+			真近战攻击会治疗你
+			每15次真近战攻击，会获得鲜血狂怒增益
+			按下“套装奖励”键会释放噬魂幽花的冤魂
+			以上两个效果有30秒的冷却时间
+			远程武器每2.5秒发射一个爆炸血炎珠
+			魔法武器每1.67秒会发射一个灵魂射弹
+			魔法武器暴击每2秒会产生一次火焰爆炸
+			召唤噬魂幽花地雷环绕着你
+			盗贼武器暴击时有50%的几率治疗你
+			拥有血神圣杯和惧魂神物的效果
+			拥有硫火魔石的全部效果
+			“堕落者的灵魂任你处置……”
+			'''
+	}
+
+	BrimflameEnchant: {
+		DisplayName: 硫火魔石
+		Tooltip:
+			'''
+			按下“套装奖励”键进入硫火狂暴模式
+			在此模式下，造成的魔法伤害会额外提高40%
+			然而代价是生命快速流失和魔力再生速度归零
+			此状态可以手动关闭，此效果有30秒的冷却时间
+			“失控的黑魔法之力”
+			'''
+	}
+
+	DaedalusEnchant: {
+		DisplayName: 代达罗斯魔石
+		Tooltip:
+			'''
+			你能够反弹射弹
+			被反弹的射弹只对你造成50%的伤害
+			反弹有90秒的冷却时间
+			当你被击中时释放水晶碎片
+			你有10%的几率吸收一次物理伤害或射弹
+			当你成功吸收了一次攻击后
+			你将恢复相当于这次攻击1/2的生命值
+			悬浮在头顶的代达罗斯水晶会保护你
+			盗贼射弹飞行时会释放水晶碎片
+			拥有永冻秘药的效果
+			拥有雪境暴徒魔石的全部效果
+			“寒冰魔法包裹着你”
+			'''
+	}
+
+	DemonShadeEnchant: {
+		DisplayName: 魔影魔石
+		Tooltip:
+			'''
+			召唤伤害提高100%
+			仆从数量上限提高10个
+			受伤时发射暗影射线和恶魔镰刀
+			召唤一只友善的红恶魔为你战斗
+			按下“套装奖励”键，在10秒内：
+			以黑魔法咒语激怒周围的敌人
+			这道咒语使它们受到2.25倍的伤害
+			同时它们对你会造成1.25倍的伤害
+			拥有渎神魂晶的效果
+			“恶魔之力于你身上显形……”
+			'''
+	}
+
+	FathomSwarmerEnchant: {
+		DisplayName: 幻渊魔石
+		Tooltip:
+			'''
+			浸没在液体中时召唤伤害提高30%
+			在深渊提供适量光照
+			并适度减少深渊中的氧气损耗
+			拥有腐蚀脊椎和流明护身符的效果
+			拥有硫磺魔石的全部效果
+			“深渊正凝视着你”
+			'''
+	}
+
+	FearmongerEnchant: {
+		DisplayName: 神惧者魔石
+		Tooltip:
+			'''
+			手持非召唤武器时，仆从造成的伤害不再降低
+			仆从攻击敌人会让你获得极高的生命再生速度
+			在南瓜月和霜月事件期间获得15%的伤害减免
+			与普通伤害减免分开计算，且可以突破软上限
+			免疫绝大多数冷系和火系的减益
+			拥有斯塔提斯的虚空饰带和幽灵披风的效果
+			“你的双眼迸发出纯粹的恐惧之源”
+			'''
+	}
+
+	GodSlayerEnchant: {
+		DisplayName: 弑神者魔石
+		Tooltip:
+			'''
+			允许你进行任意方向距离极长的冲刺
+			在按下控制角色移动的按键同时
+			再按下“弑神者冲刺”键就能进行指定方向的冲刺
+			被冲刺撞到的敌人会受到极高的伤害
+			在冲刺过程中你免疫绝大多数的减益
+			弑神者冲刺有45秒的冷却时间
+			近战速度提高20%，敌人更有可能以你为目标
+			受到超过80点伤害会释放8个高伤害的弑神飞镖
+			敌人碰到你时反弹相当于碰撞伤害2.5倍的伤害
+			远程武器射击时，每2.5秒发射一枚弑神榴霰弹
+			最大潜行值增加120点
+			生命值全满时所有盗贼属性提高10%
+			如果一次攻击对你造成了超过80点伤害
+			你会获得额外的无敌帧时间
+			拥有星云之核和嘉登之心的效果
+			“弑神之力存于你的心中……”
+			'''
+	}
+
+	MolluskEnchant: {
+		DisplayName: 软壳魔石
+		Tooltip:
+			'''
+			两只贝壳会在战斗中助你一臂之力
+			仆从数量上限提高4个
+			伤害提高10%，水平移动速度降低
+			拥有大珍珠和海波纹章的效果
+			拥有胜潮魔石的全部效果
+			“世界掌握在你的手中”
+			'''
+	}
+
+	OmegaBlueEnchant: {
+		DisplayName: 蓝色欧米茄魔石
+		Tooltip:
+			'''
+			增加15点盔甲穿透
+			触手会攻击附近的敌人，偷取生命值治疗你
+			按下“套装奖励”键进入深渊狂乱状态，持续5秒
+			期间能大幅提高你的伤害和暴击率
+			同时触手的攻击欲望和攻击范围都会提高
+			此效果有25秒的冷却时间
+			拥有深渊潜游服的效果
+			“深渊的黑暗笼罩着你……”
+			'''
+	}
+
+	PlagueReaperEnchant: {
+		DisplayName: 瘟疫死神魔石
+		Tooltip:
+			'''
+			25%的几率不消耗弹药，飞行时间提高5%
+			受瘟疫减益影响的敌人会额外受到10%的远程伤害
+			你受伤时瘟疫残渣会从天而降
+			按下“套装奖励”键会让自己在5秒内失去视野
+			同时，远程伤害提高60%，远程暴击率提高20%
+			此效果有25秒的冷却时间
+			拥有瘟疫蜂巢、瘟疫燃料背包和露营者的效果
+			“以毒攻毒，药到病除”
+			'''
+	}
+
+	ReaverEnchant: {
+		DisplayName: 掠夺者魔石
+		Tooltip:
+			'''
+			高亮显示附近的所有宝藏
+			提升物品拾取距离和物块放置距离，在水下挖掘物块时恢复氧气
+			召唤一个掠夺者毒球照亮周围区域，在深渊中提供微量光照
+			免疫掉落伤害并允许自动跳跃，飞行时间和水平飞行速度提高10%
+			钩爪的射速和牵引速度提高10%，降低冲刺类效果的冷却时间
+			增加10点防御和1.5点生命再生速度
+			但移动速度与飞行时间降低20%，敌人更有可能以你为目标
+			受到持续性伤害减益时的生命恢复的损失降低20%
+			所有攻击有10%的几率，能吸收造成伤害20%的生命并提高生命再生
+			敌人会受到你的反伤效果，你被击中时会召唤一束荆棘伤害敌人
+			当你受伤时有25%的几率获得掠夺者之怒增益
+			“你的敌人将生不如死……”
+			'''
+	}
+
+	SilvaEnchant: {
+		DisplayName: 始源林海魔石
+		Tooltip:
+			'''
+			所有射弹击中敌人时生成能治疗的林海光球
+			最大移动速度和加速度提高5%
+			剩余1点生命值时将获得始源林海无敌增益
+			增益期间，你在8秒内不会死亡
+			此效果有5分钟的冷却时间
+			冷却时间不会在Boss存在或事件期间计时
+			无法穿透的魔法射弹击中敌人后
+			有几率产生强大的自然能量爆炸
+			召唤伤害提高65%，仆从数量上限提高5个
+			召唤向敌人发射生命能量的远古叶片水晶
+			拥有聚合之脑和圣魂神物的效果
+			拥有痴愚金龙干细胞和寻神者之礼的效果
+			“无尽的生命能量于你身上喷涌而出……”
+			'''
+	}
+
+	SnowRuffianEnchant: {
+		DisplayName: 雪境暴徒魔石
+		Tooltip:
+			'''
+			你可以缓降以消除掉落伤害
+			拥有潜遁者宝石的效果
+			“捕食者，觅食者”
+			'''
+	}
+
+	StatigelEnchant: {
+		DisplayName: 斯塔提斯魔石
+		Tooltip:
+			'''
+			一次性受到超过100点伤害时
+			会延长受伤后的无敌帧时间
+			提高跳跃高度，跳跃速度提高12%
+			召唤史莱姆之神宝宝为你而战
+			它的种类取决于世界邪恶类型
+			拥有反击围巾、魔能谐振仪、
+			以及真菌共生体的效果
+			“神秘的斯塔提斯之力环绕着你……”
+			'''
+	}
+
+	SulphurousEnchant: {
+		DisplayName: 硫磺魔石
+		Tooltip:
+			'''
+			攻击敌人或被敌人攻击时，对其造成中毒减益
+			获得二连跳的能力，跳跃时生成硫磺泡泡
+			提高水下移动力，降低硫磺海水的威胁性
+			拥有沙尘披风和诱惑鱼饵的效果
+			“你仿佛和硫磺海融为一体”
+			'''
+	}
+
+	TarragonEnchant: {
+		DisplayName: 龙蒿魔石
+		Tooltip:
+			'''
+			近战速度提高15%，敌人更有可能以你为目标
+			受伤时有25%的几率获得生命涌流增益
+			按下“套装奖励”键将自已用生命能量包裹
+			此时会大幅降低受到的接触伤害，持续10秒
+			此效果有30秒的冷却时间
+			远程射弹消失时会分裂为追踪敌人的生命能量
+			每五次暴击时发射叶片风暴
+			魔法射弹击中敌人时有50%的几率治疗你
+			召唤伤害提高50%，仆从数量上限提高3个
+			召唤围绕着你的生命光环，对附近敌人持续造成伤害
+			最大潜行值增加115点
+			每造成50次盗贼暴击时，你会获得2.5秒无敌时间
+			此效果有25秒的冷却时间
+			处于被减益影响的状态时，提升10%的盗贼伤害
+			拥有渎火核心和蚀日尊戒的效果
+			“布瑞莱尔的不朽之力于你体内流淌……”
+			'''
+	}
+
+	UmbraphileEnchant: {
+		DisplayName: 日影魔石
+		Tooltip:
+			'''
+			盗贼武器击中敌人时有几率造成爆炸
+			潜伏攻击总是能造成爆炸
+			拥有盗贼铸币、吸血鬼符咒、
+			以及动量电容器的效果
+			“漫步于暗日之影下”
+			'''
+	}
+
+	VictideEnchant: {
+		DisplayName: 胜潮魔石
+		Tooltip:
+			'''
+			使用任何武器时，都有10%的几率发射回旋贝壳射弹
+			贝壳能造成真实伤害，不受任何职业伤害加成影响
+			提高水下机动性，稍微减缓深渊中呼吸条的消耗速度
+			召唤一只海蜗牛保护你
+			拥有卢克索的礼物和海波项链的效果
+			“昔日的海洋王国赐予你力量……”
+			'''
+	}
+
+	WulfrumEnchant: {
+		DisplayName: 钨钢魔石
+		Tooltip:
+			'''
+			生命值低于50%时增加5点防御
+			拥有气功念珠的效果
+			“不要与钨魔石弄混了……”
+			'''
+	}
+
+	XerocEnchant: {
+		DisplayName: 皇天魔石
+		Tooltip:
+			'''
+			盗贼射弹击中敌人会产生特殊效果
+			受伤时受到来自宇宙怒火的加持
+			拥有归一心元石的效果
+			“原始之神的力量被你所攫取……”
+			'''
+	}
+
+	RogueEssence: {
+		DisplayName: 狂徒精华
+		Tooltip:
+			'''
+			盗贼伤害提高18%
+			盗贼攻击速度提高5%
+			盗贼暴击率提高5%
+			“这只是个开始……”
+			'''
+	}
+
+	AnnihilationForce: {
+		DisplayName: 湮灭之力
+		Tooltip:
+			'''
+			[i:FargoCalamity/AerospecEnchant][i:FargoCalamity/StatigelEnchant] 拥有天蓝盔甲和斯塔提斯盔甲的套装效果
+			[i:FargoCalamity/AtaxiaEnchant][i:FargoCalamity/XerocEnchant][i:FargoCalamity/FearmongerEnchant] 拥有渊泉盔甲、皇天盔甲和神惧者盔甲的套装效果
+			[i:FargoCalamity/AerospecEnchant] 拥有角斗士金锁和不稳定花岗岩核心的效果
+			[i:FargoCalamity/StatigelEnchant] 拥有反击围巾、魔能谐振仪和真菌共生体的效果
+			[i:FargoCalamity/AtaxiaEnchant] 拥有神圣符文和虚空掠夺者的效果
+			[i:FargoCalamity/XerocEnchant] 拥有归一心元石的效果
+			[i:FargoCalamity/FearmongerEnchant] 拥有斯塔提斯的虚空饰带和幽灵披风的效果
+			“曾经存在生命与光明的地方，如今只剩下残破的废墟……”
+			'''
+	}
+
+	DesolationForce: {
+		DisplayName: 荒芜之力
+		Tooltip:
+			'''
+			[i:FargoCalamity/MolluskEnchant] 拥有软壳盔甲和胜潮盔甲的套装效果
+			[i:FargoCalamity/FathomSwarmerEnchant] 幻渊鱼群盔甲和硫磺盔甲的套装效果
+			[i:FargoCalamity/DaedalusEnchant] 拥有代达罗斯盔甲和雪境暴徒盔甲的套装效果
+			[i:FargoCalamity/UmbraphileEnchant] 拥有日影盔甲的套装效果
+			[i:FargoCalamity/AstralEnchant][i:FargoCalamity/OmegaBlueEnchant] 拥有星幻盔甲和蓝色欧米茄盔甲的套装效果
+			[i:FargoCalamity/VictideEnchant] 拥有卢克索的礼物和海波项链的效果
+			[i:FargoCalamity/MolluskEnchant] 拥有大珍珠和海波纹章的效果
+			[i:FargoCalamity/SulphurousEnchant] 拥有沙尘披风和诱惑鱼饵的效果
+			[i:FargoCalamity/FathomSwarmerEnchant] 拥有腐蚀脊椎和流明护身符的效果
+			[i:FargoCalamity/SnowRuffianEnchant][i:FargoCalamity/DaedalusEnchant] 拥有潜遁者宝石和永冻秘药的效果
+			[i:FargoCalamity/UmbraphileEnchant] 拥有盗贼铸币、吸血鬼符咒和动量电容器的效果
+			[i:FargoCalamity/AstralEnchant] 拥有无瑕粹魂晶和引力靴的效果
+			[i:FargoCalamity/OmegaBlueEnchant] 拥有深渊潜游服的效果
+			“当世界变得贫瘠和寒冷时，你将是剩下的唯一”
+			'''
+	}
+
+	DevastationForce: {
+		DisplayName: 毁灭之力
+		Tooltip:
+			'''
+			[i:FargoCalamity/WulfrumEnchant] 拥有钨钢盔甲的套装效果
+			[i:FargoCalamity/ReaverEnchant] 拥有掠夺者盔甲的套装效果
+			[i:FargoCalamity/PlagueReaperEnchant] 拥有瘟疫死神盔甲的套装效果
+			[i:FargoCalamity/DemonShadeEnchant] 拥有魔影盔甲的套装效果
+			[i:FargoCalamity/WulfrumEnchant][i:FargoCalamity/DemonShadeEnchant] 拥有气功念珠和渎神魂晶的效果
+			[i:FargoCalamity/PlagueReaperEnchant] 拥有瘟疫蜂巢、瘟疫燃料背包和露营者的效果
+			“让那些反抗你的一切生灵下地狱吧”
+			'''
+	}
+
+	ExaltationForce: {
+		DisplayName: 升华之力
+		Tooltip:
+			'''
+			[i:FargoCalamity/TarragonEnchant] 拥有龙蒿盔甲的套装效果
+			[i:FargoCalamity/BloodflareEnchant][i:FargoCalamity/BrimflameEnchant] 拥有血炎盔甲和硫火盔甲的套装效果
+			[i:FargoCalamity/GodSlayerEnchant] 拥有弑神者盔甲的套装效果
+			[i:FargoCalamity/SilvaEnchant] 拥有始源林海盔甲的套装效果
+			[i:FargoCalamity/AuricEnchant] 拥有古圣金源盔甲的套装效果
+			[i:FargoCalamity/TarragonEnchant] 拥有渎火核心和蚀日尊戒的效果
+			[i:FargoCalamity/BloodflareEnchant] 拥有血神圣杯和惧魂神物的效果
+			[i:FargoCalamity/GodSlayerEnchant] 拥有星云之核和嘉登之心的效果
+			[i:FargoCalamity/SilvaEnchant] 拥有聚合之脑和圣魂神物的效果
+			[i:FargoCalamity/SilvaEnchant] 拥有痴愚金龙干细胞和寻神者之礼的效果
+			[i:FargoCalamity/AuricEnchant] 拥有元灵之心和化绵留香石的效果
+			“涅槃之光抚慰着你的心灵，淬炼着你的意志”
+			'''
+	}
+
+	CalamitySoul: {
+		DisplayName: 暴君之魂
+		Tooltip:
+			'''
+			拥有几乎所有灾厄盔甲的套装效果
+			拥有绝大多数灾厄饰品的效果
+			[i:FargoCalamity/AnnihilationForce] 嗜血的癫狂笼罩着恐惧之夜，拥有湮灭之力的效果
+			[i:FargoCalamity/DesolationForce] 践踏与摧残玷污着废墟之地，拥有荒芜之力的效果
+			[i:FargoCalamity/DevastationForce] 永燃的狱火奴役着尘世亡灵，拥有毁灭之力的效果
+			[i:FargoCalamity/ExaltationForce] 不朽传说重塑着秩序与混乱，拥有升华之力的效果
+			“而在最后，这片血与火的大地，终于再次归于沉寂……”
+			'''
+	}
+
+	RogueSoul: {
+		DisplayName: 流浪者之魂
+		Tooltip:
+			'''
+			盗贼伤害提高30%
+			盗贼攻击速度提高15%
+			盗贼暴击率提高15%
+			拥有日蚀魔镜和纳米技术的效果
+			拥有敬天神盗盒和浴火龙鳞的效果
+			“匿影藏形，无迹可寻”
+			'''
+	}
+
+	universe: {
+		Tooltip:
+			'''
+			手持武器对应的职业伤害提高66%
+			手持武器对应的暴击率提高25%
+			所有武器的攻击速度提高50%
+			射弹速度提高50%，武器的击退力翻倍
+			最大魔力值增加300点
+			[i:FargowiltasSouls/UniverseCore] 暴击伤害变为4倍而不是2倍
+			[i:FargowiltasSouls/UniverseCore] 暴击会造成宇宙之火减益
+			[i:FargowiltasSouls/ConjuristsSoul] 仆从和哨兵数量上限提高2个
+			拥有[i:FargowiltasSouls/BerserkerSoul]烈火手套、悠悠球袋和天界壳的效果
+			拥有[i:FargowiltasSouls/SnipersSoul]狙击镜、[i:FargowiltasSouls/ArchWizardsSoul]天界手铐和魔力花的效果
+			拥有[i:FargoCalamity/RogueSoul]流浪者之魂和[i:FargoCalamity/CalamitySoul]暴君之魂的效果
+			“诸天也向你俯首”
+			'''
+		DisplayName: 寰宇之魂
+	}
+
+	SoulOfEternity: {
+		DisplayName: 永恒之魂
+		Tooltip:
+			'''
+			将你的基础暴击率设为50%
+			每次暴击都会提高10%的暴击率
+			暴击率达到100%后：
+			每次攻击会附带10%的生命偷取
+			每次攻击会提高5%的伤害、增加5点防御
+			此效果可叠加950次，直到你被击中
+			'''
+	}
+}
+
+Configs: {
+	SoulConfig: {
+		DisplayName: 灾厄魂石配置
+
+		calamityToggles: {
+			Label: 灾厄效果
+			Tooltip: ""
+		}
+
+		PresetA: {
+			Label: 全部开启
+			Tooltip: ""
+		}
+
+		PresetB: {
+			Label: 全部关闭
+			Tooltip: ""
+		}
+	}
+
+	CalamityToggles: {
+		Headers: {
+			XerocEnchantment: 皇天魔石
+			WulfrumEnchantment: 钨钢魔石
+			VictideEnchantment: 胜潮魔石
+			UmbraphileEnchantment: 日影魔石
+			TarragonEnchantment: 龙蒿魔石
+			SulphurousEnchantment: 硫磺魔石
+			StatigelEnchantment: 斯塔提斯魔石
+			SnowRuffianEnchantment: 雪境暴徒魔石
+			SilvaEnchantment: 始源林海魔石
+			ReaverEnchantment: 掠夺者魔石
+			PlagueReaperEnchantment: 瘟疫死神魔石
+			OmegaBlueEnchantment: 蓝色欧米茄魔石
+			MolluskEnchantment: 软壳魔石
+			GodSlayerEnchantment: 弑神者魔石
+			FearmongerEnchantment: 神惧者魔石
+			FathomSwarmerEnchantment: 幻渊魔石
+			DemonShadeEnchantment: 魔影魔石
+			DaedalusEnchantment: 代达罗斯魔石
+			BrimflameEnchantment: 硫火魔石
+			BloodflareEnchantment: 血炎魔石
+			AuricEnchantment: 古圣金源魔石
+			AtaxiaEnchantment: 渊泉魔石
+			AstralEnchantment: 星幻魔石
+			AerospecEnchantment: 天蓝魔石
+		}
+
+		EmpyreanArmour: {
+			Label: 皇天盔甲
+			Tooltip: ""
+		}
+
+		TheCommunity: {
+			Label: 归一心元石
+			Tooltip: ""
+		}
+
+		TrinketofChi: {
+			Label: 气功念珠
+			Tooltip: ""
+		}
+
+		VictideArmour: {
+			Label: 胜潮盔甲
+			Tooltip: ""
+		}
+
+		OceanCrest: {
+			Label: 海波项链
+			Tooltip: ""
+		}
+
+		LuxorsGift: {
+			Label: 卢克索的礼物
+			Tooltip: ""
+		}
+
+		UmbraphileArmour: {
+			Label: 日影盔甲
+			Tooltip: ""
+		}
+
+		ThiefsDime: {
+			Label: 盗贼铸币
+			Tooltip: ""
+		}
+
+		VampiricTalisman: {
+			Label: 吸血鬼符咒
+			Tooltip: ""
+		}
+
+		MomentumCapacitor: {
+			Label: 动量电容器
+			Tooltip: ""
+		}
+
+		TarragonArmour: {
+			Label: 龙蒿盔甲
+			Tooltip: ""
+		}
+
+		BlazingCore: {
+			Label: 渎火核心
+			Tooltip: ""
+		}
+
+		DarkSunRing: {
+			Label: 蚀日尊戒
+			Tooltip: ""
+		}
+
+		SulphurousArmour: {
+			Label: 硫磺盔甲
+			Tooltip: ""
+		}
+
+		SandCloak: {
+			Label: 沙尘披风
+			Tooltip: ""
+		}
+
+		AlluringBait: {
+			Label: 诱惑鱼饵
+			Tooltip: ""
+		}
+
+		StatigelArmour: {
+			Label: 斯塔提斯套装
+			Tooltip: ""
+		}
+
+		ManaOverloader: {
+			Label: 魔能谐振仪
+			Tooltip: ""
+		}
+
+		CounterScarf: {
+			Label: 反击围巾
+			Tooltip: ""
+		}
+
+		ScuttlersJewel: {
+			Label: 潜遁者宝石
+			Tooltip: ""
+		}
+
+		SilvaArmour: {
+			Label: 始源林海盔甲
+			Tooltip: ""
+		}
+
+		TheAmalgam: {
+			Label: 聚合之脑
+			Tooltip: ""
+		}
+
+		YharimsGift: {
+			Label: 寻神者之礼
+			Tooltip: ""
+		}
+
+		DynamoStemCells: {
+			Label: 痴愚金龙干细胞
+			Tooltip: ""
+		}
+
+		ReaverArmour: {
+			Label: 掠夺者盔甲
+			Tooltip: ""
+		}
+
+		PlagueReaperArmour: {
+			Label: 瘟疫死神盔甲
+			Tooltip: ""
+		}
+
+		OmegaBlueArmour: {
+			Label: 蓝色欧米茄盔甲
+			Tooltip: ""
+		}
+
+		AbyssalDivingSuit: {
+			Label: 深渊潜游服
+			Tooltip: ""
+		}
+
+		MolluskArmour: {
+			Label: 软壳盔甲
+			Tooltip: ""
+		}
+
+		AquaticEmblem: {
+			Label: 水波纹章
+			Tooltip: ""
+		}
+
+		GodSlayerArmour: {
+			Label: 弑神者盔甲
+			Tooltip: ""
+		}
+
+		DraedonsHeart: {
+			Label: 维魂神物
+			Tooltip: ""
+		}
+
+		FearmongerArmour: {
+			Label: 神惧者盔甲
+			Tooltip: ""
+		}
+
+		SpectralVeil: {
+			Label: 幽灵披风
+			Tooltip: ""
+		}
+
+		FathomSwarmerArmour: {
+			Label: 幻渊鱼群盔甲
+			Tooltip: ""
+		}
+
+		CorrosiveSpine: {
+			Label: 腐蚀脊椎
+			Tooltip: ""
+		}
+
+		LumenousAmulet: {
+			Label: 流明护身符
+			Tooltip: ""
+		}
+
+		DemonshadeArmour: {
+			Label: 魔影盔甲
+			Tooltip: ""
+		}
+
+		DaedalusArmour: {
+			Label: 代达罗斯盔甲
+			Tooltip: ""
+		}
+
+		PermafrostsConcoction: {
+			Label: 永冻秘药
+			Tooltip: ""
+		}
+
+		BrimflameArmour: {
+			Label: 硫火盔甲
+			Tooltip: ""
+		}
+
+		BloodflareArmour: {
+			Label: 血炎盔甲
+			Tooltip: ""
+		}
+
+		ChaliceOfTheBloodGod: {
+			Label: 血神核心
+			Tooltip: ""
+		}
+
+		EldritchSoulArtifact: {
+			Label: 惧魂神物
+			Tooltip: ""
+		}
+
+		AuricArmour: {
+			Label: 古圣金源盔甲
+			Tooltip: ""
+		}
+
+		HeartoftheElements: {
+			Label: 元灵之心
+			Tooltip: ""
+		}
+
+		TheSponge: {
+			Label: 化绵留香石
+			Tooltip: ""
+		}
+
+		HydrothermicArmour: {
+			Label: 渊泉盔甲
+			Tooltip: ""
+		}
+
+		AstralArmour: {
+			Label: 星幻盔甲
+			Tooltip: ""
+		}
+
+		Purity: {
+			Label: 无瑕粹魂晶
+			Tooltip: ""
+		}
+
+		AerospecArmour: {
+			Label: 天蓝套装
+			Tooltip: ""
+		}
+
+		GladiatorsLocket: {
+			Label: 角斗士金锁
+			Tooltip: ""
+		}
+
+		UnstablePrism: {
+			Tooltip: ""
+			Label: 不稳定花岗岩核心
+		}
+
+		GravistarSabaton: {
+			Tooltip: ""
+			Label: 引力靴
+		}
+
+		EtherealExtorter: {
+			Tooltip: ""
+			Label: 虚空掠夺者
+		}
+
+		HallowedRune: {
+			Tooltip: ""
+			Label: 神圣符文
+		}
+
+		ProfanedSoulCrystal: {
+			Tooltip: ""
+			Label: 渎神魂晶
+		}
+
+		StatisBeltOfCurses: {
+			Tooltip: ""
+			Label: 斯塔提斯的虚空饰带
+		}
+
+		NebulousCore: {
+			Tooltip: ""
+			Label: 星云之核
+		}
+
+		GiantPearl: {
+			Tooltip: ""
+			Label: 大珍珠
+		}
+
+		MutatedTruffle: {
+			Tooltip: ""
+			Label: 突变松露
+		}
+
+		ReaperToothNecklace: {
+			Tooltip: ""
+			Label: 猎魂鲨齿项链
+		}
+
+		TheCamper: {
+			Tooltip: ""
+			Label: 露营者
+		}
+
+		PlaguedFuelPack: {
+			Tooltip: ""
+			Label: 瘟疫燃料背包
+		}
+
+		PlagueHive: {
+			Tooltip: ""
+			Label: 瘟疫蜂巢
+		}
+
+		GodlySoulArtifact: {
+			Tooltip: ""
+			Label: 圣魂神物
+		}
+
+		SnowRuffianArmour: {
+			Tooltip: ""
+			Label: 雪境暴徒盔甲
+		}
+
+		FungalSymbiote: {
+			Tooltip: ""
+			Label: 真菌共生体
+		}
+
+		Tooltip: ""
+
+		WulfrumArmour: {
+			Tooltip: ""
+			Label: 钨钢盔甲
+		}
+	}
+}
+
+NPCs: {
+	DarkSquirrel: {
+		TownNPCMood: {
+			LoveBiome: 我喜欢森林，因为这地方充满了橡实和树木。
+			HateBiome: 我不喜欢地下，这里的空间太黑太狭隘。
+			LoveSpace: 我喜欢拥有一棵自己的树，这是我的私人空间。
+			FarFromHome: 我不喜欢离家太远，很少离开自己的大树附近。
+			Content: 当我有足够的橡实过冬时，我就满足了。
+			LoveNPC: 我很喜欢商人，他总是会出售最好的橡实。
+			HateNPC: 我不喜欢其他的松鼠，它们总是喜欢偷我的橡实！
+			Princess_LovesNPC: 我很喜欢{NPCName}。
+			LikeNPC_Princess: "{NPCName}和另一只松鼠都一样可爱！"
+			HateCrowded: 我讨厌其他像松鼠一样的动物侵入我的空间，这让我感到非常的拥挤！
+			DislikeCrowded: 我不喜欢周围有其他动物，我感觉有一点拥挤。
+			NoHome: 当我的树被毁掉时，我讨厌这种无家可归的感觉。
+		}
+
+		DisplayName: 暗黑松鼠
+	}
+}
