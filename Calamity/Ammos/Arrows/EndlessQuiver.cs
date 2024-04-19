@@ -16,31 +16,31 @@ using CalamityMod.Projectiles.Pets;
 
 namespace FargoCalamity.Calamity.Ammos.Arrows
 {
-    public class IcecleArrow : BaseAmmo
+    public class IcecleQuiver : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("IcecleArrow").Type;
     }
-    public class ArcticArrow : BaseAmmo
+    public class ArcticQuiver : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("ArcticArrow").Type;
     }
-    public class BloodfireArrow : BaseAmmo
+    public class BloodfireQuiver : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("BloodfireArrow").Type;
     }
-    public class VanquisherArrow : BaseAmmo
+    public class VanquisherQuiver : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("VanquisherArrow").Type;
     }
-    public class TerraArrow : BaseAmmo
+    public class TerraQuiver : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("TerraArrow").Type;
     }
-    public class ElysianArrow : BaseAmmo
+    public class ElysianQuiver : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("ElysianArrow").Type;
     }
-    public class NapalmArrow : BaseAmmo
+    public class NapalmQuiver : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("NapalmArrow").Type;
     }

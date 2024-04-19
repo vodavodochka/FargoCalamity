@@ -2,6 +2,8 @@
 using FargoCalamity.Calamity.Essences;
 using FargoCalamity.Calamity.Forces;
 using FargoCalamity.Calamity.Souls;
+using FargoCalamity.Calamity.Ammos.Arrows;
+using FargoCalamity.Calamity.Ammos.Bullets;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -58,6 +60,27 @@ namespace FargoCalamity
                 { "RogueSoul", typeof(RogueSoul) },
                 { "SoulOfEternity", typeof(SoulOfEternity) },
                 { "universe", typeof(universe) },
+                { "Icecle Quiver", typeof(IcecleQuiver)},
+                { "Arctic Quiver", typeof(ArcticQuiver)},
+                { "Bloodfire Quiver", typeof(BloodfireQuiver)},
+                { "Vanquisher Quiver", typeof(VanquisherQuiver)},
+                { "Terra Quiver", typeof(TerraQuiver)},
+                { "Elysian Quiver", typeof(ElysianQuiver)},
+                { "Napalm Quiver", typeof(NapalmQuiver)},
+                { "Acceleration Pouch", typeof(AccelerationPouch)},
+                { "Bloodfire Pouch", typeof(BloodfirePouch)},
+                { "Bubonic Pouch", typeof(BubonicPouch)},
+                { "Enhanced Nano Pouch", typeof(EnchancedNanoPouch)},
+                { "Flash Pouch", typeof(FlashPouch)},
+                { "GodSlayer Poucht" typeof(GodSlayerPouch)}
+                { "HolyFire Pouch",typeof(HolyFire)},
+                { "Hyperius Pouch", typeof(HyperiusPouch)},
+                { "Icy Pouch", typeof(IcyPouch)},
+                { "Marksman Pouch", typeof(MarksmanPouch)},
+                { "Mortar Pouch", typeof(MortarPouch)},
+                { "Rubber Mortar Pouch", typeof(RubberMortarPouch)},
+                { "Superball Pouch", typeof(SuperballPouch)},
+                { "Verium Pouch", typeof(VeriumPouch)},
             };
 
             foreach (KeyValuePair<string, Type> enchantType in enchantTypes)

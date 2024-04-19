@@ -11,47 +11,47 @@ using CalamityMod.Items.Weapons.Melee;
 
 namespace FargoCalamity.Calamity.Ammos.Bullets
 {
-    public class AccelerationRound : BaseAmmo
+    public class AccelerationPouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("AcceselerationRound").Type;
     }
 
-    public class BloodfireBullet : BaseAmmo
+    public class BloodfirePouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("BloodfireBullet").Type;
     }
 
-    public class BubonicRound : BaseAmmo
+    public class BubonicPouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("BubonicRound").Type;
     }
 
-    public class EnhancedNanoRound : BaseAmmo
+    public class EnhancedNanoPouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("EnhancedNanoRound").Type;
     }
 
-    public class FalshRound : BaseAmmo
+    public class FlashPouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("FlashRound").Type;
     }
 
-    public class GodSlayerSlug : BaseAmmo
+    public class GodSlayerPouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("GodSlayerSlug").Type;
     }
 
-    public class HolyFireBullet : BaseAmmo
+    public class HolyFirePouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("HolyFireBullet").Type;
     }
 
-    public class HyperiusBullet : BaseAmmo
+    public class HyperiusPouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("HyperiusBullet").Type;
     }
 
-    public class IcyBullet : BaseAmmo
+    public class IcyPouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("IcyBullet").Type;
     }
@@ -61,27 +61,22 @@ namespace FargoCalamity.Calamity.Ammos.Bullets
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("MarksmanRound").Type;
     }
 
-    public class MarksmanRound : BaseAmmo
-    {
-        public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("MarksmanRound").Type;
-    }
-
-    public class MortarRound : BaseAmmo
+    public class MortarPouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("MortarRound").Type;
     }
 
-    public class RubberMortarRound : BaseAmmo
+    public class RubberMortarPouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("RubberMortarRound").Type;
     }
 
-    public class SuperballBullet : BaseAmmo
+    public class SuperballPouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("TerraBullet").Type;
     }
 
-    public class VeriumBullet : BaseAmmo
+    public class VeriumPouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("MarksmanRound").Type;
     }
