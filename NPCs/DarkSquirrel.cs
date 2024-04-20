@@ -9,6 +9,7 @@ using Terraria.GameContent.Personalities;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using Terraria.Utilities;
 using FargoCalamity;
 using FargoCalamity.Calamity.Enchantments;
 
@@ -19,7 +20,9 @@ namespace FargoCalamity.NPCs
     {
         private static Profiles.DefaultNPCProfile NPCProfile;
         private string ShopName = "DarkSquirrelShop";
+        private string ShopName2 = "DarkSquirrelShop2";
         private int count;
+        private bool shop1Active = true;
         public override void SetStaticDefaults()
         {
             Main.npcFrameCount[Type] = 6;
@@ -86,9 +89,27 @@ namespace FargoCalamity.NPCs
             };
         }
 
+        public override void OnChatButtonCLicked(bool firstButton, ref string shop)
+        {
+            if (firstButton)
+            {
+                if (shop1Active) {
+                    shop = ShopName;
+                } else {
+                    shop = ShopName2;
+                }
+            }
+            else
+            {
+                shop1Active = !shop1Active; // Toggle between shops
+            }
+        }
+
+
         public override void SetChatButtons(ref string button, ref string button2)
         {
             button = "Shop";
+            button2 = "Switch";
         }
 
         public override string GetChat()
@@ -134,9 +155,10 @@ namespace FargoCalamity.NPCs
         public override void AddShops()
         {
             NPCShop npcShop = new NPCShop(Type, ShopName);
-            Mod fargoCalamity = ModLoader.GetMod("FargoCalamity");
+            NPCShop npcShop2 = new NPCShop(Type, ShopName2);
 
             npcShop.Register();
+            npcShop2.Register();
         }
     }
 }
