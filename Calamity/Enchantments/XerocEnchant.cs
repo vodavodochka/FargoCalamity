@@ -1,4 +1,4 @@
-﻿using Terraria;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Localization;
@@ -42,6 +42,7 @@ namespace FargoCalamity.Calamity.Enchantments
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             if (!FargoCalamity.Instance.CalamityLoaded) return;
+            //var calamityconf = SoulConfig.Instance.calamityToggles;
 
             if (SoulConfig.Instance.calamityToggles.EmpyreanArmour)
             {

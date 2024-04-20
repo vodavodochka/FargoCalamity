@@ -15,7 +15,7 @@ using CalamityMod.Buffs.Pets;
 using CalamityMod.Projectiles.Pets;
 
 
-namespace FargoCalamity.Calamity
+namespace FargoCalamity.Calamity.Ammos
 {
     public abstract class BaseAmmo : ModItem
     {

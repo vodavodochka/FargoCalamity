@@ -20,6 +20,7 @@ using CalamityMod.Items.Pets;
 using CalamityMod.Buffs.Pets;
 using CalamityMod.Projectiles.Pets;
 
+
 namespace FargoCalamity.Calamity.Enchantments
 {
     public class AerospecEnchant : ModItem
