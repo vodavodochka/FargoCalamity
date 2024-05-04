@@ -18,7 +18,6 @@ using FargowiltasSouls.Content.Items.Accessories.Souls;
 using FargowiltasSouls.Content.Items.Accessories.Expert;
 using FargoCalamity.Calamity.Essences;
 using FargoCalamity.Calamity.Souls;
-using FargowiltasSouls.Common.Graphics.Shaders;
 using FargowiltasSouls.Content.Items.Accessories.Enchantments;
 using FargowiltasSouls.Content.Items.Accessories.Souls;
 using FargowiltasSouls.Content.Items.Accessories.Masomode;

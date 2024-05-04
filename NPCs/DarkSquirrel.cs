@@ -22,6 +22,8 @@ namespace FargoCalamity.NPCs
         private string ShopName = "DarkSquirrelShop";
         private string ShopName2 = "DarkSquirrelShop2";
         private int count;
+        public NPCShop Shop2 { get; private set; }
+        private bool shop2Active = false;
         private bool shop1Active = true;
         public override void SetStaticDefaults()
         {
@@ -89,27 +91,11 @@ namespace FargoCalamity.NPCs
             };
         }
 
-        public override void OnChatButtonCLicked(bool firstButton, ref string shop)
-        {
-            if (firstButton)
-            {
-                if (shop1Active) {
-                    shop = ShopName;
-                } else {
-                    shop = ShopName2;
-                }
-            }
-            else
-            {
-                shop1Active = !shop1Active; // Toggle between shops
-            }
-        }
-
 
         public override void SetChatButtons(ref string button, ref string button2)
         {
             button = "Shop";
-            button2 = "Switch";
+            button2 = shop2Active ? "Switch to Shop 1" : "Switch to Shop 2";
         }
 
         public override string GetChat()
@@ -150,15 +136,20 @@ namespace FargoCalamity.NPCs
             {
                 shop = ShopName;
             }
+            else
+            {
+                shop2Active = !shop2Active;
+                NPC.RecalculateShop(this, shop);
+            }
         }
 
         public override void AddShops()
         {
             NPCShop npcShop = new NPCShop(Type, ShopName);
-            NPCShop npcShop2 = new NPCShop(Type, ShopName2);
+            Shop2 = new NPCShop(Type, ShopName2);
 
             npcShop.Register();
-            npcShop2.Register();
-        }
+            Shop2.Register();
+        }   
     }
 }

@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Terraria.ID;
 using Terraria;
 using Terraria.ModLoader;
+using FargoCalamity.NPCs;
 
 namespace FargoCalamity
 {
@@ -60,28 +61,31 @@ namespace FargoCalamity
                 { "RogueSoul", typeof(RogueSoul) },
                 { "SoulOfEternity", typeof(SoulOfEternity) },
                 { "universe", typeof(universe) },
-                { "Icecle Quiver", typeof(IcecleQuiver)},
-                { "Arctic Quiver", typeof(ArcticQuiver)},
-                { "Bloodfire Quiver", typeof(BloodfireQuiver)},
-                { "Vanquisher Quiver", typeof(VanquisherQuiver)},
-                { "Terra Quiver", typeof(TerraQuiver)},
-                { "Elysian Quiver", typeof(ElysianQuiver)},
-                { "Napalm Quiver", typeof(NapalmQuiver)},
-                { "Acceleration Pouch", typeof(AccelerationPouch)},
-                { "Bloodfire Pouch", typeof(BloodfirePouch)},
-                { "Bubonic Pouch", typeof(BubonicPouch)},
-                { "Enhanced Nano Pouch", typeof(EnchancedNanoPouch)},
-                { "Flash Pouch", typeof(FlashPouch)},
-                { "GodSlayer Poucht" typeof(GodSlayerPouch)}
-                { "HolyFire Pouch",typeof(HolyFire)},
-                { "Hyperius Pouch", typeof(HyperiusPouch)},
-                { "Icy Pouch", typeof(IcyPouch)},
-                { "Marksman Pouch", typeof(MarksmanPouch)},
-                { "Mortar Pouch", typeof(MortarPouch)},
-                { "Rubber Mortar Pouch", typeof(RubberMortarPouch)},
-                { "Superball Pouch", typeof(SuperballPouch)},
-                { "Verium Pouch", typeof(VeriumPouch)},
+                { "IcecleQuiver", typeof(IcecleQuiver)},
+                { "ArcticQuiver", typeof(ArcticQuiver)},
+                { "BloodfireQuiver", typeof(BloodfireQuiver)},
+                { "VanquisherQuiver", typeof(VanquisherQuiver)},
+                { "TerraQuiver", typeof(TerraQuiver)},
+                { "ElysianQuiver", typeof(ElysianQuiver)},
+                { "NapalmQuiver", typeof(NapalmQuiver)},
+                { "AccelerationPouch", typeof(AccelerationPouch)},
+                { "BloodfirePouch", typeof(BloodfirePouch)},
+                { "BubonicPouch", typeof(BubonicPouch)},
+                { "EnhancedNanoPouch", typeof(EnhancedNanoPouch)},
+                { "FlashPouch", typeof(FlashPouch)},
+                { "GodSlayerPouch", typeof(GodSlayerPouch)},
+                { "HolyFirePouch",typeof(HolyFirePouch)},
+                { "HyperiusPouch", typeof(HyperiusPouch)},
+                { "IcyPouch", typeof(IcyPouch)},
+                { "MarksmanPouch", typeof(MarksmanPouch)},
+                { "MortarPouch", typeof(MortarPouch)},
+                { "RubberMortarPouch", typeof(RubberMortarPouch)},
+                { "SuperballPouch", typeof(SuperballPouch)},
+                { "VeriumPouch", typeof(VeriumPouch)},
             };
+
+            int shopIndex = shop2Active ? 1 : 0;
+            NPCShop currentShop = shopIndex == 0 ? shop : fargoCalamity.GetNPC(shop.NpcType).Shop2;
 
             foreach (KeyValuePair<string, Type> enchantType in enchantTypes)
             {
@@ -89,14 +93,27 @@ namespace FargoCalamity
                 if (modItem != null)
                 {
                     int enchantItemType = modItem.Item.type;
-                    shop.Add(enchantItemType, new Condition("HasItem", () =>
+                    if (!currentShop.Item.Any(item => item.type == enchantItemType))
                     {
-                        return Main.LocalPlayer.HasItem(enchantItemType);
-                    }));
+                        currentShop.Add(enchantItemType, new Condition("HasItem", () =>
+                        {
+                            return Main.LocalPlayer.HasItem(enchantItemType);
+                        }));
+                    }
+                    else if (shopIndex == 0)
+                    {
+                        shop2Active = true;
+                        break;
+                    }
                 }
             }
 
-
+        }
+        public void SwitchShop(NPC npc)
+        {
+            DarkSquirrel darkSquirrel = (DarkSquirrel)npc.ModNPC;
+            darkSquirrel.shop2Active = !darkSquirrel.shop2Active;
+            RecalculateShop(npc);
         }
     }
 }

@@ -482,6 +482,111 @@ Items: {
 			Effects of Calamity and Rogue Souls
 			'''
 	}
+
+	VeriumPouch: {
+		Tooltip: ""
+		DisplayName: Verium Pouch
+	}
+
+	SuperballPouch: {
+		Tooltip: ""
+		DisplayName: Superball Pouch
+	}
+
+	RubberMortarPouch: {
+		Tooltip: ""
+		DisplayName: Rubber Mortar Pouch
+	}
+
+	MortarPouch: {
+		Tooltip: ""
+		DisplayName: Mortar Pouch
+	}
+
+	MarksmanPouch: {
+		Tooltip: ""
+		DisplayName: Marksman Pouch
+	}
+
+	IcyPouch: {
+		Tooltip: ""
+		DisplayName: Icy Pouch
+	}
+
+	HyperiusPouch: {
+		Tooltip: ""
+		DisplayName: Hyperius Pouch
+	}
+
+	HolyFirePouch: {
+		Tooltip: ""
+		DisplayName: Holy Fire Pouch
+	}
+
+	GodSlayerPouch: {
+		Tooltip: ""
+		DisplayName: God Slayer Pouch
+	}
+
+	FlashPouch: {
+		Tooltip: ""
+		DisplayName: Flash Pouch
+	}
+
+	EnhancedNanoPouch: {
+		Tooltip: ""
+		DisplayName: Enhanced Nano Pouch
+	}
+
+	BubonicPouch: {
+		Tooltip: ""
+		DisplayName: Bubonic Pouch
+	}
+
+	BloodfirePouch: {
+		Tooltip: ""
+		DisplayName: Bloodfire Pouch
+	}
+
+	AccelerationPouch: {
+		Tooltip: ""
+		DisplayName: Acceleration Pouch
+	}
+
+	VanquisherQuiver: {
+		Tooltip: ""
+		DisplayName: Vanquisher Quiver
+	}
+
+	TerraQuiver: {
+		Tooltip: ""
+		DisplayName: Terra Quiver
+	}
+
+	NapalmQuiver: {
+		Tooltip: ""
+		DisplayName: Napalm Quiver
+	}
+
+	IcecleQuiver: {
+		Tooltip: ""
+		DisplayName: Icecle Quiver
+	}
+
+	ElysianQuiver: {
+		Tooltip: ""
+		DisplayName: Elysian Quiver
+	}
+
+	BloodfireQuiver: {
+		Tooltip: ""
+		DisplayName: Bloodfire Quiver
+	}
+
+	ArcticQuiver: {
+		Tooltip: ""
+		DisplayName: Arctic Quiver
+	}
 }
 
 Configs: {
