@@ -13,7 +13,7 @@ namespace FargoCalamity.Calamity.Ammos.Bullets
 {
     public class AccelerationPouch : BaseAmmo
     {
-        public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("AcceselerationRound").Type;
+        public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("AccelerationRound").Type;
     }
 
     public class BloodfirePouch : BaseAmmo
@@ -56,7 +56,7 @@ namespace FargoCalamity.Calamity.Ammos.Bullets
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("IcyBullet").Type;
     }
 
-    public class MarksmanRound : BaseAmmo
+    public class MarksmanPouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("MarksmanRound").Type;
     }

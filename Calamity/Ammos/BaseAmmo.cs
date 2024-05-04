@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Terraria;
 using Terraria.ModLoader;
+using Fargowiltas;
+using FargowiltasSouls;
 using CalamityMod;
 using CalamityMod.Items.Armor.Aerospec;
 using CalamityMod.Items.Accessories;
@@ -42,7 +44,8 @@ namespace FargoCalamity.Calamity.Ammos
         {
             CreateRecipe()
                 .AddIngredient(AmmunitionID, 3996)
-                .AddTile(ModLoader.GetMod("CalamityMod").Find<ModTile>("CosmicAnvilItem").Type)
+                .AddIngredient(ModLoader.GetMod("FargowiltasSouls").Find<ModItem>("AbomEnergy").Type, 20)
+                .AddTile(ModLoader.GetMod("CalamityMod").Find<ModTile>("CosmicAnvil").Type)
                 .Register();
         }
     }

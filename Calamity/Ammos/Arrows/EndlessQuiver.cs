@@ -18,7 +18,7 @@ namespace FargoCalamity.Calamity.Ammos.Arrows
 {
     public class IcecleQuiver : BaseAmmo
     {
-        public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("IcecleArrow").Type;
+        public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("IcicleArrow").Type;
     }
     public class ArcticQuiver : BaseAmmo
     {
