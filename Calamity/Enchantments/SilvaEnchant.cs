@@ -53,7 +53,7 @@ namespace FargoCalamity.Calamity.Enchantments
             }
             if (SoulConfig.Instance.calamityToggles.GodlySoulArtifact)
             {
-                ModLoader.GetMod("CalamityMod").Find<ModItem>("GodlySoulArtifact").UpdateAccessory(player, hideVisual);
+                ModLoader.GetMod("CalamityMod").Find<ModItem>("AuricSoulArtifact").UpdateAccessory(player, hideVisual);
             }
             if (SoulConfig.Instance.calamityToggles.YharimsGift)
             {
@@ -75,7 +75,7 @@ namespace FargoCalamity.Calamity.Enchantments
             recipe.AddIngredient(ModContent.ItemType<SilvaArmor>());
             recipe.AddIngredient(ModContent.ItemType<SilvaLeggings>());
             recipe.AddIngredient(ModContent.ItemType<TheAmalgam>());
-            recipe.AddIngredient(ModContent.ItemType<GodlySoulArtifact>());
+            recipe.AddIngredient(ModContent.ItemType<AuricSoulArtifact>());
             recipe.AddIngredient(ModContent.ItemType<YharimsGift>());
 
             recipe.AddTile(calamity, "DraedonsForge");

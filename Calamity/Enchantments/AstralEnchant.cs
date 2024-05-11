@@ -50,7 +50,7 @@ namespace FargoCalamity.Calamity.Enchantments
             }
             if (SoulConfig.Instance.calamityToggles.Purity)
             {
-                ModLoader.GetMod("CalamityMod").Find<ModItem>("Purity").UpdateAccessory(player, hideVisual);
+                ModLoader.GetMod("CalamityMod").Find<ModItem>("Radiance").UpdateAccessory(player, hideVisual);
             }
             if (SoulConfig.Instance.calamityToggles.GravistarSabaton)
             {
@@ -67,7 +67,7 @@ namespace FargoCalamity.Calamity.Enchantments
             recipe.AddIngredient(ModContent.ItemType<AstralHelm>());
             recipe.AddIngredient(ModContent.ItemType<AstralBreastplate>());
             recipe.AddIngredient(ModContent.ItemType<AstralLeggings>());
-            recipe.AddIngredient(ModContent.ItemType<Purity>());
+            recipe.AddIngredient(ModContent.ItemType<Radiance>());
             recipe.AddIngredient(ModContent.ItemType<GravistarSabaton>());
             recipe.AddIngredient(ModContent.ItemType<UrsaSergeant>());
 

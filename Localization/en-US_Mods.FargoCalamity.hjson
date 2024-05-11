@@ -1004,5 +1004,6 @@ NPCs: {
 		}
 
 		DisplayName: Dark Squirrel
+		Census.SpawnCondition: Conditions unknown
 	}
 }

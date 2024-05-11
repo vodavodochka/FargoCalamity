@@ -2,8 +2,9 @@
 using FargoCalamity.Calamity.Essences;
 using FargoCalamity.Calamity.Forces;
 using FargoCalamity.Calamity.Souls;
-using FargoCalamity.Calamity.Ammos.Arrows;
-using FargoCalamity.Calamity.Ammos.Bullets;
+//using FargoCalamity.Calamity.Ammos.Arrows;
+//using FargoCalamity.Calamity.Ammos.Bullets;
+using FargoCalamity.NPCs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,11 +14,26 @@ using Terraria.ID;
 using Terraria;
 using Terraria.ModLoader;
 using FargoCalamity.NPCs;
+using System.Security.Cryptography.X509Certificates;
 
 namespace FargoCalamity
 {
     internal class FargoCalamityGlobalNPC : GlobalNPC
     {
+        // int counter = 0;
+        // private NPCShop npcShop1;
+        // private NPCShop npcShop2;
+        // public override bool InstancePerEntity => true;
+        // public FargoCalamityGlobalNPC()
+        // {
+        //     DarkSquirrel darkSquirrel = ModContent.GetInstance<DarkSquirrel>();
+        //     npcShop1 = darkSquirrel.NpcShop1;
+        //     npcShop2 = darkSquirrel.NpcShop2;
+        //     darkSquirrel.AddShops();
+        //     npcShop1.Register();
+        //     npcShop2.Register();
+        // }
+
         public override void ModifyShop(NPCShop shop)
         {
             if (shop.NpcType != ModLoader.GetMod("FargoCalamity").Find<ModNPC>("DarkSquirrel").Type)
@@ -61,31 +77,7 @@ namespace FargoCalamity
                 { "RogueSoul", typeof(RogueSoul) },
                 { "SoulOfEternity", typeof(SoulOfEternity) },
                 { "universe", typeof(universe) },
-                { "IcecleQuiver", typeof(IcecleQuiver)},
-                { "ArcticQuiver", typeof(ArcticQuiver)},
-                { "BloodfireQuiver", typeof(BloodfireQuiver)},
-                { "VanquisherQuiver", typeof(VanquisherQuiver)},
-                { "TerraQuiver", typeof(TerraQuiver)},
-                { "ElysianQuiver", typeof(ElysianQuiver)},
-                { "NapalmQuiver", typeof(NapalmQuiver)},
-                { "AccelerationPouch", typeof(AccelerationPouch)},
-                { "BloodfirePouch", typeof(BloodfirePouch)},
-                { "BubonicPouch", typeof(BubonicPouch)},
-                { "EnhancedNanoPouch", typeof(EnhancedNanoPouch)},
-                { "FlashPouch", typeof(FlashPouch)},
-                { "GodSlayerPouch", typeof(GodSlayerPouch)},
-                { "HolyFirePouch",typeof(HolyFirePouch)},
-                { "HyperiusPouch", typeof(HyperiusPouch)},
-                { "IcyPouch", typeof(IcyPouch)},
-                { "MarksmanPouch", typeof(MarksmanPouch)},
-                { "MortarPouch", typeof(MortarPouch)},
-                { "RubberMortarPouch", typeof(RubberMortarPouch)},
-                { "SuperballPouch", typeof(SuperballPouch)},
-                { "VeriumPouch", typeof(VeriumPouch)},
             };
-
-            int shopIndex = shop2Active ? 1 : 0;
-            NPCShop currentShop = shopIndex == 0 ? shop : fargoCalamity.GetNPC(shop.NpcType).Shop2;
 
             foreach (KeyValuePair<string, Type> enchantType in enchantTypes)
             {
@@ -93,27 +85,59 @@ namespace FargoCalamity
                 if (modItem != null)
                 {
                     int enchantItemType = modItem.Item.type;
-                    if (!currentShop.Item.Any(item => item.type == enchantItemType))
+                    shop.Add(enchantItemType, new Condition("HasItem", () =>
                     {
-                        currentShop.Add(enchantItemType, new Condition("HasItem", () =>
-                        {
-                            return Main.LocalPlayer.HasItem(enchantItemType);
-                        }));
-                    }
-                    else if (shopIndex == 0)
-                    {
-                        shop2Active = true;
-                        break;
-                    }
+                        return Main.LocalPlayer.HasItem(enchantItemType);
+                    }));
                 }
             }
-
-        }
-        public void SwitchShop(NPC npc)
-        {
-            DarkSquirrel darkSquirrel = (DarkSquirrel)npc.ModNPC;
-            darkSquirrel.shop2Active = !darkSquirrel.shop2Active;
-            RecalculateShop(npc);
         }
     }
 }
+            // { "IcecleQuiver", typeof(IcecleQuiver)},
+            // { "ArcticQuiver", typeof(ArcticQuiver)},
+            // { "BloodfireQuiver", typeof(BloodfireQuiver)},
+            // { "VanquisherQuiver", typeof(VanquisherQuiver)},
+            // { "TerraQuiver", typeof(TerraQuiver)},
+            // { "ElysianQuiver", typeof(ElysianQuiver)},
+            // { "NapalmQuiver", typeof(NapalmQuiver)},
+            // { "AccelerationPouch", typeof(AccelerationPouch)},
+            // { "BloodfirePouch", typeof(BloodfirePouch)},
+            // { "BubonicPouch", typeof(BubonicPouch)},
+            // { "EnhancedNanoPouch", typeof(EnhancedNanoPouch)},
+            // { "FlashPouch", typeof(FlashPouch)},
+            // { "GodSlayerPouch", typeof(GodSlayerPouch)},
+            // { "HolyFirePouch",typeof(HolyFirePouch)},
+            // { "HyperiusPouch", typeof(HyperiusPouch)},
+            // { "IcyPouch", typeof(IcyPouch)},
+            // { "MarksmanPouch", typeof(MarksmanPouch)},
+            // { "MortarPouch", typeof(MortarPouch)},
+            // { "RubberMortarPouch", typeof(RubberMortarPouch)},
+            // { "SuperballPouch", typeof(SuperballPouch)},
+            // { "VeriumPouch", typeof(VeriumPouch)},
+        /*};
+
+            foreach (KeyValuePair<string, Type> enchantType in enchantTypes)
+            {
+                //counter = 0;
+                ModItem modItem = fargoCalamity.Find<ModItem>(enchantType.Key);
+                if (modItem != null)
+                {
+                    int enchantItemType = modItem.Item.type;
+                    
+                    //if (counter <= 39)
+                    //{
+                        shop.Add(enchantItemType, new Condition("HasItem", () =>
+                        {
+                            return Main.LocalPlayer.HasItem(enchantItemType);
+                        }));*/
+                        //if (Main.LocalPlayer.HasItem(enchantItemType)) counter++;
+                    //}
+                    // else
+                    // {
+                    //     npcShop2.Add(enchantItemType, new Condition("HasItem", () =>
+                    //     {
+                    //         return Main.LocalPlayer.HasItem(enchantItemType);
+                    //     }));
+                    // }
+        
