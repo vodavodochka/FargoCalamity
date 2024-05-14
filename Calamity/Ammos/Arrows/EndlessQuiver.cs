@@ -20,10 +20,6 @@ namespace FargoCalamity.Calamity.Ammos.Arrows
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("IcicleArrow").Type;
     }
-    public class ArcticQuiver : BaseAmmo
-    {
-        public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("ArcticArrow").Type;
-    }
     public class BloodfireQuiver : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("BloodfireArrow").Type;
@@ -32,7 +28,7 @@ namespace FargoCalamity.Calamity.Ammos.Arrows
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("VanquisherArrow").Type;
     }
-    public class TerraQuiver : BaseAmmo
+    public class SproutingQuiver : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("TerraArrow").Type;
     }

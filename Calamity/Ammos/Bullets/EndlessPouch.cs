@@ -11,10 +11,6 @@ using CalamityMod.Items.Weapons.Melee;
 
 namespace FargoCalamity.Calamity.Ammos.Bullets
 {
-    public class AccelerationPouch : BaseAmmo
-    {
-        public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("AccelerationRound").Type;
-    }
 
     public class BloodfirePouch : BaseAmmo
     {
@@ -24,11 +20,6 @@ namespace FargoCalamity.Calamity.Ammos.Bullets
     public class BubonicPouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("BubonicRound").Type;
-    }
-
-    public class EnhancedNanoPouch : BaseAmmo
-    {
-        public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("EnhancedNanoRound").Type;
     }
 
     public class FlashPouch : BaseAmmo
@@ -66,14 +57,14 @@ namespace FargoCalamity.Calamity.Ammos.Bullets
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("MortarRound").Type;
     }
 
+    public class DryadsTear : BaseAmmo
+    {
+        public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("DryadsTear").Type;
+    }
+
     public class RubberMortarPouch : BaseAmmo
     {
         public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("RubberMortarRound").Type;
-    }
-
-    public class SuperballPouch : BaseAmmo
-    {
-        public override int AmmunitionID => ModLoader.GetMod("CalamityMod").Find<ModItem>("TerraBullet").Type;
     }
 
     public class VeriumPouch : BaseAmmo
