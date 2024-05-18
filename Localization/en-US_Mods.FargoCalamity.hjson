@@ -483,109 +483,191 @@ Items: {
 			'''
 	}
 
-	VeriumPouch: {
-		Tooltip: ""
-		DisplayName: Verium Pouch
-	}
-
-	SuperballPouch: {
-		Tooltip: ""
-		DisplayName: Superball Pouch
-	}
-
 	RubberMortarPouch: {
-		Tooltip: ""
-		DisplayName: Rubber Mortar Pouch
+		Tooltip:
+			'''
+			Unleashes specialized high-explosive ammunition, creating a large blast radius upon impact.
+			Each bounce of these powerful rounds will obliterate tiles in their path.
+			Used by normal guns
+			'Brace for impact...'"'
+			'''
+		DisplayName: Rubber Mortar Endless Pouch
+	}
+
+	SproutingQuiver: {
+		Tooltip:
+			'''
+			Launches an energy-infused projectile that rapidly divides into two arrows mid-flight. 
+			These arrows bypass 8 points of the target's defense, striking with precision and efficiency. 
+			'Prepare for the unexpected...'
+			'''
+		DiplayName: Sprouting Endless Quiver
+		DisplayName: Sprouting Quiver
+	}
+
+	VeriumQuiver: {
+		Tooltip:
+			'''
+			Marks and damages enemies with a barrage of bolts.
+			Damage increases with each bolt that hits.
+			'There is no end to this torment...'
+			'''
+		DiplayName: Verium Endless Quiver
+		DisplayName: Verium Quiver
+	}
+
+	HallowPointPouch: {
+		Tooltip:
+			'''
+			Loads your gun with ammunition that expands on impact, causing severe damage to the target.
+			'Prepare for a powerful blow...'
+			'''
+		DisplayName: Hallow-Point Endless Pouch
+	}
+
+	HallstormPouch: {
+		Tooltip:
+			'''
+			Equips your gun with bullets imbued with powerful ice magic. 
+			These bullets slow down after being fired, and critical hits cause a flash freeze, dealing extra damage. 
+			'Prepare for the chilling bite...'"'
+			'''
+		DisplayName: Hallstorm Endless Pouch
 	}
 
 	MortarPouch: {
-		Tooltip: ""
-		DisplayName: Mortar Pouch
+		Tooltip:
+			'''
+			Loads your gun with ammunition designed for maximum destruction. 
+			Upon impact, these rounds create a large explosion, obliterating tiles in the area. 
+			'Brace for the impact...`
+			'''
+		DisplayName: Mortar Endless Pouch
+	}
+
+	DryadsTearPouch: {
+		Tooltip:
+			'''
+			Equips your firearm with ammunition that, upon impact, explodes and splits into homing nature shards, seeking out nearby enemies. 
+			'A wrathful embrace of the wilds is unleashed...'
+			'''
+		DisplayName: Dryad's Tear Endless Pouch
 	}
 
 	MarksmanPouch: {
-		Tooltip: ""
-		DisplayName: Marksman Pouch
-	}
-
-	IcyPouch: {
-		Tooltip: ""
-		DisplayName: Icy Pouch
+		Tooltip:
+			'''
+			Holds expertly crafted rounds that can be ricocheted off midair coins. 
+			This adaptable ammunition enables other firearms to utilize the coins tossed by Crackshot Colt and Midas Prime. 
+			'A precise strike awaits...'
+			'''
+		DisplayName: Marksman Endless Pouch
 	}
 
 	HyperiusPouch: {
-		Tooltip: ""
-		DisplayName: Hyperius Pouch
+		Tooltip:
+			'''
+			Holds powerful multicolor bullets that, upon impact, burst into a mesmerizing display of swirling lights.
+			'A dazzling spectacle unfolds...'
+			'''
+		DisplayName: Hyperius Endless Pouch
 	}
 
 	HolyFirePouch: {
-		Tooltip: ""
-		DisplayName: Holy Fire Pouch
+		Tooltip:
+			'''
+			Equips your firearm with explosive holy bullets that create larger blasts immediately upon being fired. 
+			'A divine inferno ignites...'
+			'''
+		DisplayName: Holy Fire Endless Pouch
 	}
 
 	GodSlayerPouch: {
-		Tooltip: ""
-		DisplayName: God Slayer Pouch
+		Tooltip:
+			'''
+			Loads your gun with ammunition that shreds through spacetime and pierces through targets without limitation. 
+			When the slug hits a wall or runs out of targets, it warps back and detonates with increased power. 
+			'A cataclysmic force is unleashed...'
+			'''
+		DisplayName: God Slayer Endless Pouch
 	}
 
 	FlashPouch: {
-		Tooltip: ""
-		DisplayName: Flash Pouch
-	}
-
-	EnhancedNanoPouch: {
-		Tooltip: ""
-		DisplayName: Enhanced Nano Pouch
+		Tooltip:
+			'''
+			Loads your gun with ammunition that, upon impact, unleashes a disorienting shockwave,
+			confusing enemies in the surrounding area for a short duration. 
+			'A wave of bewilderment is imminent...'
+			'''
+		DisplayName: Flash Endless Pouch
 	}
 
 	BubonicPouch: {
-		Tooltip: ""
-		DisplayName: Bubonic Pouch
+		Tooltip:
+			'''
+			Supplies your weapon with ammunition that infects enemies with a virulent plague on hit, while ignoring 10% of their defense. 
+			'A harbinger of pestilence strikes...'
+			'''
+		DisplayName: Bubonic Endless Pouch
 	}
 
 	BloodfirePouch: {
-		Tooltip: ""
-		DisplayName: Bloodfire Pouch
-	}
-
-	AccelerationPouch: {
-		Tooltip: ""
-		DisplayName: Acceleration Pouch
+		Tooltip:
+			'''
+			Enhances your firearm with ammunition that effortlessly passes through tiles and accelerates your natural life regeneration upon impact. 
+			Deals bonus damage based on your current and natural life regeneration rates, capping at 25. 
+			'A rejuvenating blaze ignites...
+			'''
+		DisplayName: Bloodfire Endless Pouch
 	}
 
 	VanquisherQuiver: {
-		Tooltip: ""
-		DisplayName: Vanquisher Quiver
-	}
-
-	TerraQuiver: {
-		Tooltip: ""
-		DisplayName: Terra Quiver
-	}
-
-	NapalmQuiver: {
-		Tooltip: ""
-		DisplayName: Napalm Quiver
+		Tooltip:
+			'''
+			Holds powerful arrows forged with cosmic steel, capable of piercing through tiles and homing in on enemies with unerring precision. 
+			'A celestial vengeance is unleashed...'
+			'''
+		DisplayName: Vanquisher Endless Quiver
 	}
 
 	IcecleQuiver: {
-		Tooltip: ""
-		DisplayName: Icecle Quiver
+		Tooltip:
+			'''
+			Holds ice arrows with enchanted tips that, upon impact, rapidly freeze into falling icicles, dealing increased damage.
+			If the arrow strikes an enemy or tile before being frozen, it will soar upwards. 
+			'A frigid onslaught is unleashed...'
+			'''
+		DisplayName: Icecle Endless Quiver
 	}
 
 	ElysianQuiver: {
-		Tooltip: ""
-		DisplayName: Elysian Quiver
+		Tooltip:
+			'''
+			Contains arrows infused with sacred and malevolent energies, 
+			causing them to call forth purifying light from the heavens and the depths upon impact. 
+			'A celestial fury is unleashed...'
+			'''
+		DisplayName: Elysian Endless Quiver
 	}
 
 	BloodfireQuiver: {
-		Tooltip: ""
-		DisplayName: Bloodfire Quiver
+		Tooltip:
+			'''
+			Holds high-velocity arrows with blood-soaked tips that, when fired, drain your health. 
+			Upon impact, these arrows accelerate your natural life regeneration and restore a portion of your health. 
+			'A sanguine sacrifice unveils a rejuvenating blaze...'
+			'''
+		DisplayName: Bloodfire Endless Quiver
 	}
 
-	ArcticQuiver: {
+	CinderQuiver: {
+		DisplayName: Cinder Quiver
 		Tooltip: ""
-		DisplayName: Arctic Quiver
+	}
+
+	HailstormPouch: {
+		DisplayName: Hailstorm Pouch
+		Tooltip: ""
 	}
 }
 
@@ -1004,6 +1086,5 @@ NPCs: {
 		}
 
 		DisplayName: Dark Squirrel
-		Census.SpawnCondition: Conditions unknown
 	}
 }
