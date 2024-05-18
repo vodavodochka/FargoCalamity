@@ -2,9 +2,8 @@
 using FargoCalamity.Calamity.Essences;
 using FargoCalamity.Calamity.Forces;
 using FargoCalamity.Calamity.Souls;
-//using FargoCalamity.Calamity.Ammos.Arrows;
-//using FargoCalamity.Calamity.Ammos.Bullets;
-using FargoCalamity.NPCs;
+using FargoCalamity.Calamity.Ammos.Arrows;
+using FargoCalamity.Calamity.Ammos.Bullets;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,26 +13,11 @@ using Terraria.ID;
 using Terraria;
 using Terraria.ModLoader;
 using FargoCalamity.NPCs;
-using System.Security.Cryptography.X509Certificates;
 
 namespace FargoCalamity
 {
     internal class FargoCalamityGlobalNPC : GlobalNPC
     {
-        // int counter = 0;
-        // private NPCShop npcShop1;
-        // private NPCShop npcShop2;
-        // public override bool InstancePerEntity => true;
-        // public FargoCalamityGlobalNPC()
-        // {
-        //     DarkSquirrel darkSquirrel = ModContent.GetInstance<DarkSquirrel>();
-        //     npcShop1 = darkSquirrel.NpcShop1;
-        //     npcShop2 = darkSquirrel.NpcShop2;
-        //     darkSquirrel.AddShops();
-        //     npcShop1.Register();
-        //     npcShop2.Register();
-        // }
-
         public override void ModifyShop(NPCShop shop)
         {
             if (shop.NpcType != ModLoader.GetMod("FargoCalamity").Find<ModNPC>("DarkSquirrel").Type)
@@ -77,6 +61,27 @@ namespace FargoCalamity
                 { "RogueSoul", typeof(RogueSoul) },
                 { "SoulOfEternity", typeof(SoulOfEternity) },
                 { "universe", typeof(universe) },
+                //Quivers
+                { "BloodfireQuiver", typeof(BloodfireQuiver)},
+                { "CinderQuiver", typeof(CinderQuiver)},
+                { "ElysianQuiver", typeof(ElysianQuiver)},
+                { "IcecleQuiver", typeof(IcecleQuiver)},
+                { "VanquisherQuiver", typeof(VanquisherQuiver)},
+                { "SproutingQuiver", typeof(SproutingQuiver)},
+                { "VeriumQuiver", typeof(VeriumQuiver)},
+                //Pouches
+                { "BloodfirePouch", typeof(BloodfirePouch)},
+                { "BubonicPouch", typeof(BubonicPouch)},
+                { "DryadsTearPouch", typeof(DryadsTearPouch)},
+                { "FlashPouch", typeof(FlashPouch)},
+                { "GodSlayerPouch", typeof(GodSlayerPouch)},
+                { "HallowPointPouch", typeof(HallowPointPouch)},
+                { "HailstormPouch", typeof(HailstormPouch)},
+                { "HolyFirePouch",typeof(HolyFirePouch)},
+                { "HyperiusPouch", typeof(HyperiusPouch)},
+                { "MarksmanPouch", typeof(MarksmanPouch)},
+                { "MortarPouch", typeof(MortarPouch)},
+                { "RubberMortarPouch", typeof(RubberMortarPouch)},
             };
 
             foreach (KeyValuePair<string, Type> enchantType in enchantTypes)
@@ -91,53 +96,7 @@ namespace FargoCalamity
                     }));
                 }
             }
+
         }
     }
 }
-            // { "IcecleQuiver", typeof(IcecleQuiver)},
-            // { "ArcticQuiver", typeof(ArcticQuiver)},
-            // { "BloodfireQuiver", typeof(BloodfireQuiver)},
-            // { "VanquisherQuiver", typeof(VanquisherQuiver)},
-            // { "TerraQuiver", typeof(TerraQuiver)},
-            // { "ElysianQuiver", typeof(ElysianQuiver)},
-            // { "NapalmQuiver", typeof(NapalmQuiver)},
-            // { "AccelerationPouch", typeof(AccelerationPouch)},
-            // { "BloodfirePouch", typeof(BloodfirePouch)},
-            // { "BubonicPouch", typeof(BubonicPouch)},
-            // { "EnhancedNanoPouch", typeof(EnhancedNanoPouch)},
-            // { "FlashPouch", typeof(FlashPouch)},
-            // { "GodSlayerPouch", typeof(GodSlayerPouch)},
-            // { "HolyFirePouch",typeof(HolyFirePouch)},
-            // { "HyperiusPouch", typeof(HyperiusPouch)},
-            // { "IcyPouch", typeof(IcyPouch)},
-            // { "MarksmanPouch", typeof(MarksmanPouch)},
-            // { "MortarPouch", typeof(MortarPouch)},
-            // { "RubberMortarPouch", typeof(RubberMortarPouch)},
-            // { "SuperballPouch", typeof(SuperballPouch)},
-            // { "VeriumPouch", typeof(VeriumPouch)},
-        /*};
-
-            foreach (KeyValuePair<string, Type> enchantType in enchantTypes)
-            {
-                //counter = 0;
-                ModItem modItem = fargoCalamity.Find<ModItem>(enchantType.Key);
-                if (modItem != null)
-                {
-                    int enchantItemType = modItem.Item.type;
-                    
-                    //if (counter <= 39)
-                    //{
-                        shop.Add(enchantItemType, new Condition("HasItem", () =>
-                        {
-                            return Main.LocalPlayer.HasItem(enchantItemType);
-                        }));*/
-                        //if (Main.LocalPlayer.HasItem(enchantItemType)) counter++;
-                    //}
-                    // else
-                    // {
-                    //     npcShop2.Add(enchantItemType, new Condition("HasItem", () =>
-                    //     {
-                    //         return Main.LocalPlayer.HasItem(enchantItemType);
-                    //     }));
-                    // }
-        
