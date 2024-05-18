@@ -127,7 +127,7 @@ namespace FargoCalamity
             }
         }
 
-        public override void AddRecipes()
+        public override void AddRecipes()/* tModPorter Note: Removed. Use ModSystem.AddRecipes */
         {
             if (CalamityLoaded)
             {
